@@ -10,6 +10,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/4c9eabfb23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
     <link rel="stylesheet" href="./css/style.css" type="text/css">
 </head>
@@ -124,7 +125,7 @@
                     <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                     <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="nav-text-color">Tìm kiếm</span></button>
                 </form>
-                <button class="btn btn-danger my-2 my-sm-0" type="button"><span class="nav-text-color">Đăng nhập</span></button>
+                <button class="btn btn-danger my-2 my-sm-0" type="button" onclick="login()"><span class="nav-text-color">Đăng nhập</span></button>
             </div>
         </nav>
         <!-- End Navigation -->
@@ -409,6 +410,160 @@
                                 </ul>
                             </div>
                         </div>
+                        <div class="flex-content">
+                            <a class="item-anime-link" href="#" title="Golden Kamuy 3rd Season (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-v5d9152tbV.jpg" alt="Golden Kamuy 3rd Season (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 9</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>07</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Golden Kamuy 3rd Season</h6>
+                                        <span>Lượt xem: 801</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Noblesse - 노블레스 (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-SDqowty086.jpg" alt="Noblesse - 노블레스 (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 9.1</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Noblesse</h6>
+                                        <span>Lượt xem: 94,970</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen - Our Last Crusade or the Rise of a New World, The Last Battlefield Between You and I, or Perhaps the Beginning of the World's Holy War, Kimisen (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-7gfmdVa2nN.jpg" alt="Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen - Our Last Crusade or the Rise of a New World, The Last Battlefield Between You and I, or Perhaps the Beginning of the World's Holy War, Kimisen (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</h6>
+                                        <span>Lượt xem: 41,982</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Osomatsu-san 3rd Season - Mr. Osomatsu (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-txz8Ep51sT.jpg" alt="Osomatsu-san 3rd Season - Mr. Osomatsu (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 5</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>07</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Osomatsu-san 3rd Season</h6>
+                                        <span>Lượt xem: 583</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Kuma Kuma Kuma Bear - The Bears Bear a Bare Kuma (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-a96tQIYzpN.jpg" alt="Kuma Kuma Kuma Bear - The Bears Bear a Bare Kuma (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Kuma Kuma Kuma Bear</h6>
+                                        <span>Lượt xem: 22,952</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Maoujou de Oyasumi - Sleepy Princess in the Demon Castle, Sleeping in Devil's Castle (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-EhDdFGIYGT.jpg" alt="Maoujou de Oyasumi - Sleepy Princess in the Demon Castle, Sleeping in Devil's Castle (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Maoujou de Oyasumi</h6>
+                                        <span>Lượt xem: 68,890</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Black Clover (TV) - Black Clover (2017), Black Clover, Thế Giới Phép Thuật (2017)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-IoEzyCjdCJ.jpg" alt="Black Clover (TV) - Black Clover (2017), Black Clover, Thế Giới Phép Thuật (2017)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 9.4</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>153</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Black Clover (TV)</h6>
+                                        <span>Lượt xem: 4,898,858</span>
+                                    </div>
+                                </div>
+                            </a>
+                            <a class="item-anime-link" href="#" title="Ikebukuro West Gate Park - Ikebukuro West Gate Park, IWGP (2020)">
+                                <div class="item-anime-content">
+                                    <img src="./images/new_anime/animevsub-DYBcgEPPCV.jpg" alt="Ikebukuro West Gate Park - Ikebukuro West Gate Park, IWGP (2020)">
+                                    <div class="item-anime-content-absol">
+                                        <div class="item-anime-content-info">
+                                            <div class="px-2">
+                                                <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                            </div>
+                                        </div>
+                                        <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                    </div>
+                                    <div class="item-anime-content-mix-color"></div>
+                                    <div class="item-anime-content-name">
+                                        <h6>Ikebukuro West Gate Park</h6>
+                                        <span>Lượt xem: 1,648</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
                     </section>
                     <!-- End Content -->
                 </div>
@@ -511,6 +666,7 @@
                                     </ul>
                                 </div>
                             </div>
+
                         </div>
                     </section>
                 </div>
@@ -525,7 +681,9 @@
 
 </body>
 <script src="./js/scroll.js"></script>
+
 <script>
+    //Move banner
     var x, xm;
     $('#carouselExampleIndicators').bind('mousedown', function(e) {
         x = e.clientX;
@@ -541,6 +699,7 @@
         });
     });
 
+    //Set color active for link tag a
     var header = document.getElementById("list-active");
     var btns = header.getElementsByTagName("a");
     for (var i = 0; i < btns.length; i++) {
@@ -549,6 +708,29 @@
             current[0].className = current[0].className.replace("actives", "");
             this.className += "actives";
         });
+    }
+
+    function login() {
+        Swal.fire({
+            title: 'Đăng nhập',
+            html: '<input type="text" id="login" class="swal2-input" placeholder="Username">' +
+                '<input type="password" id="password" class="swal2-input" placeholder="Password">',
+            confirmButtonText: 'Sign in',
+            focusConfirm: false,
+            preConfirm: () => {
+                const login = Swal.getPopup().querySelector('#login').value
+                const password = Swal.getPopup().querySelector('#password').value
+                if (!login || !password) {
+                    Swal.showValidationMessage(`Please enter login and password`)
+                }
+                return {
+                    login: login,
+                    password: password
+                }
+            }
+        }).then((result) => {
+            Swal.fire(`Login: ${result.value.login} Password: ${result.value.password}`.trim())
+        })
     }
 </script>
 
