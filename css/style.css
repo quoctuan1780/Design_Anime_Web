@@ -15,7 +15,6 @@ body {
 
 .col-30 {
     width: 30%;
-    padding-left: 10px;
 }
 
 
@@ -209,7 +208,7 @@ body {
 .banner-image {
     position: relative;
     border-radius: 10px;
-    width: 100%;
+    width: max-content;
     max-width: fit-content;
 }
 
@@ -292,6 +291,8 @@ body {
 .crop {
     width: 80%;
     overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: pre-wrap;
     height: 3.5em;
     line-height: 1.5em;
 }
@@ -332,14 +333,54 @@ body {
 /* End Banner */
 
 
+/* Content */
+
+.list-anime {
+    padding-top: 2rem;
+}
+
+.list-anime-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.list-anime-header ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.list-anime-header ul li {
+    padding-right: 2rem;
+}
+
+.list-anime-header ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.actives span {
+    color: #e62117;
+}
+
+
+/* End Content */
+
+
 /* col 30 */
 
 
 /* Section */
 
+section {
+    padding-bottom: 2rem;
+}
+
 .content {
     background-color: rgba(25, 33, 36, 0.5);
-    padding-left: 10px;
     color: #FFFFFF;
     height: auto;
     border-radius: 2px;
@@ -360,6 +401,65 @@ body {
 
 .content a button {
     margin-bottom: 10px;
+}
+
+
+/* New update anime*/
+
+.list-anime-update ul {
+    list-style: none;
+    padding-left: 5px;
+}
+
+.list-anime-update hr {
+    background-color: #0f1416;
+}
+
+.list-anime-update ul li a span {
+    color: rgba(202, 12, 12, 0.8);
+}
+
+.list-anime-update ul li a {
+    text-decoration: none;
+}
+
+.list-anime-update ul li a div {
+    padding-bottom: 5px;
+    border-bottom: 1px solid #0f1416;
+}
+
+.fa-angle-right {
+    display: none;
+    padding-right: 5px;
+}
+
+.list-anime-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.list-anime-name {
+    flex-grow: 2;
+    width: 60%;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    height: 1.5em;
+}
+
+.list-anime-ep {
+    padding-left: 10px;
+    flex-grow: 1;
+}
+
+.list-anime-update ul li a:hover span {
+    color: #FFFFFF;
+    transition: all 0.1s;
+}
+
+.list-anime-update ul li a:hover span .fa-angle-right {
+    display: inline-block;
 }
 
 
@@ -456,19 +556,23 @@ body {
         position: relative;
         border-radius: 10px;
         transition: all 0.5s;
+        text-align: center;
     }
     .banner-content {
         position: unset;
-        width: 100%;
+        width: 85%;
         border-radius: 0px;
         background-color: rgba(0, 0, 0, .65);
         transition: all 0.5s;
+        text-align: start;
+        margin-left: auto;
+        margin-right: auto;
     }
     .mix-color {
         display: none;
     }
     .banner-image img {
-        width: 100%;
+        width: 85%;
         border-radius: 0px;
         z-index: -1;
         transition: all 0.5s;
@@ -478,6 +582,13 @@ body {
     }
     .nav-text-color {
         font-size: 10px;
+    }
+    /* Content */
+    section {
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+        padding-top: 2rem;
     }
 }
 
@@ -526,6 +637,10 @@ body {
     }
     .banner-image img {
         height: 240px;
+    }
+    /* Content */
+    section {
+        padding-top: 2rem;
     }
 }
 
@@ -587,5 +702,9 @@ body {
     }
     .dropdown-content {
         max-width: 320px;
+    }
+    /* Content */
+    section {
+        padding-top: 2rem;
     }
 }
