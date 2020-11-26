@@ -1,0 +1,320 @@
+.col-70 {
+    width: 70%;
+}
+
+.col-30 {
+    width: 30%;
+}
+
+.banner {
+    margin-top: 120px;
+}
+
+.banner-image {
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+    max-width: fit-content;
+}
+
+.banner-image img {
+    width: 100%;
+    max-width: fit-content;
+    border-radius: 10px;
+    background-size: contain;
+    z-index: -1;
+    transition: all 0.5s;
+}
+
+.mix-color {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(81, 77, 77, 0.2);
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.banner-content {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background-color: rgba(81, 77, 77, 0.4);
+    width: 60%;
+    height: 100%;
+    border-radius: 10px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.banner-content a {
+    text-decoration: none;
+}
+
+.banner-content a div {
+    color: #FFF;
+    font-size: 24px;
+}
+
+.banner-content p {
+    padding: 1% 0%;
+}
+
+.banner-content div {
+    padding: 1% 0%;
+}
+
+.banner-content button {
+    margin-bottom: 5%;
+}
+
+.banner-decription p a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.banner-decription p a i {
+    padding: 5px;
+}
+
+.hd {
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    line-height: 20px;
+    padding: 0 .6rem;
+    border-radius: 10px;
+    font-weight: 700;
+    background-color: #e62117
+}
+
+.crop {
+    width: 80%;
+    overflow: hidden;
+    height: 3.5em;
+    line-height: 1.5em;
+}
+
+.fa-user-circle {
+    font-size: 36px;
+}
+
+.banner-cast p {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.banner-cast i {
+    padding-right: 5px;
+}
+
+.banner-cast a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.banner-cast a i {
+    padding: 5px;
+}
+
+.border-circle {
+    border-radius: 50%;
+    border: 1px solid #b5e745;
+}
+
+.border-circle:hover {
+    background-color: #b5e745;
+}
+
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    /* CSS */
+}
+
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .banner-content {
+        background-color: rgba(0, 0, 0, .65);
+        transition: all 0.5s;
+    }
+    .mix-color {
+        transition: all 0.5s;
+    }
+    .banner-image img {
+        width: 100%;
+        border-radius: 10px;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    .banner-content {
+        width: 60%;
+        transition: all 0.5s;
+    }
+    .banner-content a {
+        font-size: 16px;
+    }
+    .banner-content a div {
+        font-size: 16px;
+    }
+    .banner-decription {
+        font-size: 14px;
+    }
+    .banner-decription p span {
+        font-size: 14px;
+    }
+    .banner-decription p a {
+        font-size: 14px;
+    }
+    .fa-user-circle {
+        font-size: 18px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .banner-image {
+        position: relative;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .banner-content {
+        position: unset;
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, .65);
+        transition: all 0.5s;
+    }
+    .banner-image img {
+        width: 100%;
+        border-radius: 0px;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    .banner-content {
+        width: 100%;
+        transition: all 0.5s;
+    }
+    .fa-user-circle {
+        font-size: 18px;
+    }
+}
+
+
+/* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+
+
+/* 
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+} */
+
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .banner-content {
+        position: unset;
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, .65);
+        transition: all 0.5s;
+    }
+    .mix-color {
+        display: none;
+        transition: all 0.5s;
+    }
+    .banner-image img {
+        width: 100%;
+        border-radius: 0px;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    .banner-content {
+        width: 100%;
+        transition: all 0.5s;
+    }
+    .fa-user-circle {
+        font-size: 18px;
+    }
+    .fa-user-circle {
+        font-size: 18px;
+    }
+}
+
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 0px) and (max-width: 480px) {
+    .banner-content {
+        position: unset;
+        border-radius: 0px;
+        background-color: rgba(0, 0, 0, .65);
+        transition: all 0.5s;
+    }
+    .mix-color {
+        width: 60%;
+        transition: all 0.5s;
+    }
+    .banner-image img {
+        width: 60%;
+        border-radius: 0px;
+        z-index: -1;
+        transition: all 0.5s;
+    }
+    .banner-content {
+        width: 60%;
+        transition: all 0.5s;
+    }
+    .banner-content a {
+        font-size: 16px;
+    }
+    .banner-content a div {
+        font-size: 16px;
+    }
+    .banner-decription {
+        font-size: 14px;
+    }
+    .banner-decription p span {
+        font-size: 14px;
+    }
+    .banner-decription p a {
+        font-size: 14px;
+    }
+    .fa-user-circle {
+        font-size: 14px;
+    }
+    .fa-user-circle {
+        font-size: 14px;
+    }
+    .banner-content button {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: small;
+    }
+}

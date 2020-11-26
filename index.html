@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/4c9eabfb23.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light px-5 navbar-mix-color">
+            <a class="navbar-brand" href="./index.html">
+                <img src="http://cdn.animevietsub.tv/data/logo/logoz.png" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span class="nav-text-color">Trang chủ</span> </a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Dạng anime</span></a>
+                            <div class="dropdown-content">
+                                <a href="#">TV/Series</a>
+                                <a href="#">Movie/OVA</a>
+                                <a href="#">Anime Sắp Chiếu</a>
+                                <a href="#">Anime Đang Chiếu</a>
+                                <a href="#">Anime Trọn Bộ</a>
+                                <a href="#">Anime Được Yêu Thích</a>
+                            </div>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Top anime</span></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Theo Ngày</a>
+                                    <a href="#">Theo Tháng</a>
+                                    <a href="#">Theo Mùa</a>
+                                    <a href="#">Theo Năm</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Thể loại</span></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Action</a>
+                                    <a href="#">Adventure</a>
+                                    <a href="#">Cartoon</a>
+                                    <a href="#">Comedy</a>
+                                    <a href="#">Dementia</a>
+                                    <a href="#">Demons</a>
+                                    <a href="#">Drama</a>
+                                    <a href="#">Ecchi</a>
+                                    <a href="#">Fantasy</a>
+                                    <a href="#">Game</a>
+                                    <a href="#">Harem</a>
+                                    <a href="#">Historical</a>
+                                    <a href="#">Horror</a>
+                                    <a href="#">Josei</a>
+                                    <a href="#">Kids</a>
+                                    <a href="#">Live Action</a>
+                                    <a href="#">Magic</a>
+                                    <a href="#">Martial Arts</a>
+                                    <a href="#">Mecha</a>
+                                    <a href="#">Military</a>
+                                    <a href="#">Music</a>
+                                    <a href="#">Mystery</a>
+                                    <a href="#">Parody</a>
+                                    <a href="#">Police</a>
+                                    <a href="#">Psychological</a>
+                                    <a href="#">Romance</a>
+                                    <a href="#">Samurai</a>
+                                    <a href="#">School</a>
+                                    <a href="#">Sci-Fi</a>
+                                    <a href="#">Seinen</a>
+                                    <a href="#">Shoujo</a>
+                                    <a href="#">Shoujo Ai</a>
+                                    <a href="#">Shounen</a>
+                                    <a href="#">Shounen Ai</a>
+                                    <a href="#">Slice of Life</a>
+                                    <a href="#">Space</a>
+                                    <a href="#">Sports</a>
+                                    <a href="#">Super Power</a>
+                                    <a href="#">Supernatural</a>
+                                    <a href="#">Thriller</a>
+                                    <a href="#">Tokusatsu</a>
+                                    <a href="#">Vampire</a>
+                                    <a href="#">Yaoi</a>
+                                    <a href="">Yuri</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Thể loại</span></a>
+                                <div class="dropdown-content">
+                                    <a href="#">Mùa Đông 2020</a>
+                                    <a href="#">Mùa Xuân 2020</a>
+                                    <a href="#">Mùa Hạ 2020</a>
+                                    <a href="#">Mùa Thu 2020</a>
+                                    <a href="#">Mùa Đông 2019</a>
+                                    <a href="#">Mùa Xuân 2019</a>
+                                    <a href="#">Mùa Hạ 2019</a>
+                                    <a href="#">Mùa Thu 2019</a>
+                                    <a href="#">Mùa Đông 2018</a>
+                                    <a href="#">Mùa Xuân 2018</a>
+                                    <a href="#">Mùa Hạ 2018</a>
+                                    <a href="#">Mùa Thu 2018</a>
+                                </div>
+                            </li>
+                            <a class="nav-link" href="#"><span class="nav-text-color">Thư viện</span> </a>
+                            <a class="nav-link" href="#"><span class="nav-text-color">Lịch chiếu</span> </a>
+                        </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 px-5">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="nav-text-color">Tìm kiếm</span></button>
+                </form>
+                <button class="btn btn-danger my-2 my-sm-0" type="button"><span class="nav-text-color">Đăng nhập</span></button>
+            </div>
+        </nav>
+        <!-- End Navigation -->
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="container">
+        <!-- Top Anime -->
+        <div class="container-xl mt-3 scroll-horizontal">
+            <a class="item-anime-link" href="#" title="Ông chồng nội trợ (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="../images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.7</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>20</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Kamisama ni Natta Hi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Mahouka Koukou no Rettousei: Raihousha-hen (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-UsmSNURxEV.jpg" alt="Mahouka Koukou no Rettousei: Raihousha-hen (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Kamisama ni Natta Hi (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-YpSiFv1xXY.jpg" alt="Kamisama ni Natta Hi (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.8</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>07</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Kamisama ni Natta Hi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="One Piece - Vua Hải Tặc (1999)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-sQCBqYz9ve.jpg" alt="One Piece - Vua Hải Tặc (1999)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.1</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>951</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>One Piece - Vua Hải Tặc</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Haikyuu!!: To the Top 2nd Season (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-a23W5RkzqX.jpg" alt="Haikyuu!!: To the Top 2nd Season (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 10</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Haikyuu!!: To the Top 2nd Season</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Majo no Tabitabi (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-dM99i6mE1S.jpg" alt="Majo no Tabitabi (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.9</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Majo no Tabitabi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Jujutsu Kaisen (TV) (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-XI9GXfbHY4.jpg" alt="Jujutsu Kaisen (TV) (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Jujutsu Kaisen</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Tonikaku Kawaii (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Tonikaku Kawaii</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-nOtd5pmG13.jpg" alt="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.6</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Top Anime-->
+        </div>
+
+        <div class="container-xl">
+            <div class="flex-container">
+                <div class="col-70">
+                    <div class="banner">
+                        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            </ol>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="banner-item">
+                                        <div class="banner-image">
+                                            <img src="./images/banner/animevsub-wfw1X0aETl.jpg" alt="Background">
+                                            <div class="mix-color"></div>
+                                            <div class="banner-content">
+                                                <a href="#">
+                                                    <div>Tonikaku Kawaii</div>
+                                                </a>
+                                                <p class="banner-info"> <i class="fas fa-star" style="color: #b5e745;"> 28</i> <i class="far fa-clock text-white"> 08/??</i> <i class="far fa-calendar-plus text-white"> 2020</i> <span class="hd">HD</span></p>
+                                                <div class="banner-decription">
+                                                    <p class="decription crop">Lớn lên bị chế giễu vì cái tên kỳ lạ của mình, Nasa Yuzaki cố gắng để được mọi người nhớ đến vì điều...</p>
+                                                    <p><i class="fas fa-video"></i><span> Studio:</span> Seven Arcs</p>
+                                                    <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>, <a href="#" title="Romance">Romance</a>,
+                                                        <a href="#" title="Comedy">Comedy</a>, <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
+                                                </div>
+                                                <div class="banner-cast">
+                                                    <p><i class="fas fa-user-circle" alt="Nhân vật Yuzaki Nasa" title="Nhân vật Yuzaki Nasa"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Arisugawa Kaname" title="Nhân vật Arisugawa Kaname"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Arisugawa Aya" title="Nhân vật Arisugawa Aya"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Kaginoji Chitose" title="Nhân vật Kaginoji Chitose"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Yuzaki Tsukasa" title="Nhân vật Yuzaki Tsukasa"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Yuzaki Nasa" title="Nhân vật Yuzaki Nasa"></i>
+                                                        <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
+                                                </div>
+                                                <button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Phim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="banner-item">
+                                        <div class="banner-image">
+                                            <img src="./images/banner/animevsub-4MTnpipveJ.jpg" alt="Background">
+                                            <div class="mix-color"></div>
+                                            <div class="banner-content">
+                                                <a href="#">
+                                                    <div>Kamisama ni Natta Hi</div>
+                                                </a>
+                                                <p class="banner-info"> <i class="fas fa-star" style="color: #b5e745;"> 12</i> <i class="far fa-clock text-white"> 07/??</i> <i class="far fa-calendar-plus text-white"> 2020</i> <span class="hd">HD</span></p>
+                                                <div class="banner-decription">
+                                                    <p class="decription crop">Vào cuối kỳ nghỉ hè cuối cùng của trường trung học, Youta Narukami dành cả ngày để chuẩn bị cho kỳ thi tuyển...</p>
+                                                    <p><i class="fas fa-video"></i><span> Studio:</span> P.A. Works</p>
+                                                    <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Fantasy">Fantasy</a>, <a href="#" title="Drama">Drama</a>,
+                                                        <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
+                                                </div>
+                                                <div class="banner-cast">
+                                                    <p><i class="fas fa-user-circle" alt="Nhân vật Hina" title="Nhân vật Hina"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Narukami Sora" title="Nhân vật Narukami Sora"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Narukami Youta" title="Nhân vật Narukami Youta"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Kaginoji Chitose" title="Nhân vật Kaginoji Chitose"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Izanami Kyouko" title="Nhân vật Izanami Kyouko"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Tengan Kako" title="Nhân vật Tengan Kako"></i>
+                                                        <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
+                                                </div>
+                                                <button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Phim</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="banner-item">
+                                        <div class="banner-image">
+                                            <img src="./images/banner/animevsub-wILDhjmsnI.jpg" alt="Background">
+                                            <div class="mix-color"></div>
+                                            <div class="banner-content">
+                                                <a href="#">
+                                                    <div>Majo no Tabitabi</div>
+                                                </a>
+                                                <p class="banner-info"> <i class="fas fa-star" style="color: #b5e745;"> 18</i> <i class="far fa-clock text-white"> 08/??</i> <i class="far fa-calendar-plus text-white"> 2020</i> <span class="hd">HD</span></p>
+                                                <div class="banner-decription">
+                                                    <p class="decription crop">Ngày xửa ngày xưa, có một phù thủy tên là Elaina, bắt đầu một cuộc hành trình xuyên thế giới. Trên đường đi,...</p>
+                                                    <p><i class="fas fa-video"></i><span> Studio:</span> C2C</p>
+                                                    <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Fantasy">Fantasy</a>, <a href="#" title="Adventure">Adventure</a>, , <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
+                                                </div>
+                                                <div class="banner-cast">
+                                                    <p><i class="fas fa-user-circle" alt="Nhân vật Elaina" title="Nhân vật Elaina"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Sheila" title="Nhân vật Sheila"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Saya" title="Nhân vật Saya"></i>
+                                                        <i class="fas fa-user-circle" alt="Nhân vật Flan" title="Nhân vật Flan"></i>
+                                                        <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
+                                                </div>
+                                                <a href="#"><button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Phim</button></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-30">
+                    <section>
+                        <div class="content">
+                            <h4>Hôm nay xem gì ?</h4>
+                            <hr>
+                            <p>Nếu bạn buồn phiền không biết xem gì hãy để chúng tôi lựa chọn cho bạn</p>
+                            <a href="#"><button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Anime <b>Ngẫu nhiên</b></button></a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <!-- End Content -->
+        <!-- Footer -->
+        <div class=" footer ">
+
+        </div>
+        <!-- End Footer -->
+
+</body>
+<script src="./js/scroll.js"></script>
+<script>
+    var x, xm;
+    $('#carouselExampleIndicators').bind('mousedown', function(e) {
+        x = e.clientX;
+        $('#carouselExampleIndicators').bind('mousemove', function(e) {
+            xm = e.clientX;
+            $('#carouselExampleIndicators').bind('mouseup', function() {
+                if (x !== xm && x > xm) {
+                    $(this).carousel('next');
+                } else if (x !== xm) {
+                    $(this).carousel('prev');
+                }
+            });
+        });
+    });
+
+    e = e || window.event;
+    pauseEvent(e);
+
+    function pauseEvent(e) {
+        if (e.stopPropagation) e.stopPropagation();
+        if (e.preventDefault) e.preventDefault();
+        e.cancelBubble = true;
+        e.returnValue = false;
+        return false;
+    }
+</script>
+
+</html>
