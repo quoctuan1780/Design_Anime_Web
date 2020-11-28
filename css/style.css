@@ -271,6 +271,7 @@ body {
 .banner-decription p a {
     text-decoration: none;
     color: #FFF;
+    font-size: 16px;
 }
 
 .banner-decription p a i {
@@ -298,7 +299,7 @@ body {
 }
 
 .fa-user-circle {
-    font-size: 36px;
+    font-size: 32px;
 }
 
 .banner-cast p {
@@ -368,6 +369,7 @@ body {
 .list-anime-header ul li a {
     text-decoration: none;
     color: #fff;
+    font-size: 15px;
 }
 
 .actives span {
@@ -624,6 +626,7 @@ body {
     position: absolute;
     left: 5%;
     top: 30%;
+    width: 90%;
 }
 
 .item-anime-content-date p {
