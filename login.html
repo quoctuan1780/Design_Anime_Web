@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime</title>
+    <script src="https://kit.fontawesome.com/4c9eabfb23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.jdSlider-latest.min.js"></script>
+    <script src="./js/timer.js "></script>
+    <script src="./js/active.js"></script>
+    <link rel="stylesheet" href="./css/signin_signup.css" type="text/css">
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="http://cdn.animevietsub.tv/data/logo/logoz.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="mix-color-nav"></div>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+
+                <li class="sub-menu"><a href="#">Dạng anime</a>
+                    <ul>
+                        <li><a href="#">TV/Series</a></li>
+                        <li><a href="#">Movie/OVA</a></li>
+                        <li><a href="#">Anime Sắp Chiếu</a></li>
+                        <li><a href="#">Anime Đang Chiếu</a></li>
+                        <li><a href="#">Anime Trọn Bộ</a></li>
+                        <li><a href="#">Anime Được Yêu Thích</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Top anime</a>
+                    <ul>
+                        <li><a href="#">Theo Ngày</a></li>
+                        <li><a href="#">Theo Tháng</a></li>
+                        <li><a href="#">Theo Mùa</a></li>
+                        <li><a href="#">Theo Năm</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Thể loại</a>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Cartoon</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Dementia</a></li>
+                        <li><a href="#">Demons</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Ecchi</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Harem</a></li>
+                        <li><a href="#">Historical</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Josei</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Live Action</a></li>
+                        <li><a href="#">Magic</a></li>
+                        <li><a href="#">Martial Arts</a></li>
+                        <li><a href="#">Mecha</a></li>
+                        <li><a href="#">Military</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Parody</a></li>
+                        <li><a href="#">Police</a></li>
+                        <li><a href="#">Psychological</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Samurai</a></li>
+                        <li><a href="#">School</a></li>
+                        <li><a href="#">Sci-Fi</a></li>
+                        <li><a href="#">Seinen</a></li>
+                        <li><a href="#">Shoujo</a></li>
+                        <li><a href="#">Shoujo Ai</a></li>
+                        <li><a href="#">Shounen</a></li>
+                        <li><a href="#">Shounen Ai</a></li>
+                        <li><a href="#">Slice of Life</a></li>
+                        <li><a href="#">Space</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Super Power</a></li>
+                        <li><a href="#">Supernatural</a></li>
+                        <li><a href="#">Thriller</a></li>
+                        <li><a href="#">Tokusatsu</a></li>
+                        <li><a href="#">Vampire</a></li>
+                        <li><a href="#">Yaoi</a></li>
+                        <li><a href="">Yuri</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="#">Season</a>
+                    <ul>
+                        <li><a href="#">Mùa Đông 2020</a></li>
+                        <li><a href="#">Mùa Xuân 2020</a></li>
+                        <li><a href="#">Mùa Hạ 2020</a></li>
+                        <li><a href="#">Mùa Thu 2020</a></li>
+                        <li><a href="#">Mùa Đông 2019</a></li>
+                        <li><a href="#">Mùa Xuân 2019</a></li>
+                        <li><a href="#">Mùa Hạ 2019</a></li>
+                        <li><a href="#">Mùa Thu 2019</a></li>
+                        <li><a href="#">Mùa Đông 2018</a></li>
+                        <li><a href="#">Mùa Xuân 2018</a></li>
+                        <li><a href="#">Mùa Hạ 2018</a></li>
+                        <li><a href="#">Mùa Thu 2018</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Thư viện</a></li>
+                <li><a href="#">Lịch chiếu</a></li>
+                <li class="child">
+                    <div class="search-container" id="search">
+                        <form action="#" class="form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="child">
+                    <div id="btn-login">
+                        <input type="button" class="btn btn-danger btn-size" onclick="login()" value="Đăng nhập">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="search-container-responsive" id="search">
+            <form action="#" class="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="container">
+        <!-- Top Anime -->
+        <div class="scroll-horizontal">
+            <a class="item-anime-link" href="#" title="Ông chồng nội trợ (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.7</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>20</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Kamisama ni Natta Hi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Mahouka Koukou no Rettousei: Raihousha-hen (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-UsmSNURxEV.jpg" alt="Mahouka Koukou no Rettousei: Raihousha-hen (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Kamisama ni Natta Hi (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-YpSiFv1xXY.jpg" alt="Kamisama ni Natta Hi (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.8</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>07</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Kamisama ni Natta Hi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="One Piece - Vua Hải Tặc (1999)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-sQCBqYz9ve.jpg" alt="One Piece - Vua Hải Tặc (1999)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.1</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>951</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>One Piece - Vua Hải Tặc</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Haikyuu!!: To the Top 2nd Season (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-a23W5RkzqX.jpg" alt="Haikyuu!!: To the Top 2nd Season (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 10</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Haikyuu!!: To the Top 2nd Season</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Majo no Tabitabi (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-dM99i6mE1S.jpg" alt="Majo no Tabitabi (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.9</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Majo no Tabitabi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Jujutsu Kaisen (TV) (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-XI9GXfbHY4.jpg" alt="Jujutsu Kaisen (TV) (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Jujutsu Kaisen</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Tonikaku Kawaii (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Tonikaku Kawaii</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-nOtd5pmG13.jpg" alt="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.6</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Top Anime-->
+        </div>
+        <!-- End Top Anime -->
+
+        <!-- Body -->
+        <div class="container-xl">
+            <div class="flex-container">
+                <div class="col-70">
+                    <!-- Banner -->
+                    <form align="center" class="form">
+
+                        <h1 class="login-title">ĐĂNG KÝ</h1>
+                        <br>
+                        <input type="button" id="fb-button" value="Đăng nhập bằng Facebook">
+                        <br>
+                        <br>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="taikhoan" name="taikhoan"
+                                placeholder="Tài khoản" required />
+                            <label class="form-control-label" for="taikhoan"><i class='fas fa-user-alt'></i></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="matkhau1" name="matkhau1"
+                                placeholder="Mật khẩu" required />
+                            <label class="form-control-label" for="matkhau1"><i class="fa fa-lock"></i></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="matkhau2" name="matkhau2"
+                                placeholder="Nhập lại mật khẩu" required />
+                            <label class="form-control-label" for="matkhau2"><i class="fa fa-lock"></i></label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                required />
+                            <label class="form-control-label" for="email"><i class="fa fa-envelope"></i></label>
+                        </div>
+                        <button type="button" id="login-button-dangky" onclick="Signup()">ĐĂNG KÝ</button>
+
+                    </form>
+                    <!-- End Banner -->
+
+                    <!-- Content -->
+                    <section class="section-col-70">
+                        <!-- New anime -->
+                        <div class="list-anime">
+                            <div class="list-anime-header">
+                                <h3>Anime mới cập nhật <i class="fas fa-angle-right" style="display: inline-block;"></i> </h3>
+                                <ul id="list-active">
+                                    <li><a class="actives" href="javascript:void(0)"><span>Tất cả</span></a></li>
+                                    <li><a href="javascript:void(0)"><span>Mùa Thu 2020</span></a></li>
+                                    <li><a href="javascript:void(0)"><span>Anime bộ</span></a></li>
+                                    <li><a href="javascript:void(0)"><span>Anime lẻ</span></a></li>
+                                </ul>
+                                <script>
+                                    active("list-active", 0);
+                                </script>
+                            </div>
+                        </div>
+                        <div class="flex-content">
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Golden Kamuy 3rd Season (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-v5d9152tbV.jpg" alt="Golden Kamuy 3rd Season (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>07</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Golden Kamuy 3rd Season</h6>
+                                            <span>Lượt xem: 801</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Golden Kamuy 3rd Season</h6>
+                                        <p><i class="fas fa-star"> 28</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Mùa 3 của Golden Kamuy.</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Seven Arcs</p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>, <a href="#" title="Romance">Romance</a>,
+                                            <a href="#" title="Comedy">Comedy</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Sugimoto Saichi,</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Noblesse - 노블레스 (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-SDqowty086.jpg" alt="Noblesse - 노블레스 (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.1</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Noblesse</h6>
+                                            <span>Lượt xem: 94,970</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Noblesse</h6>
+                                        <p><i class="fas fa-star"> 9.1</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Raizel thức dậy sau giấc ngủ dài 820 năm của mình. Anh ta giữ danh hiệu đặc biệt của Quý tộc, là một Quý tộc</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Production I.G</p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="School">School</a>, <a href="#" title="Vampire">Vampire</a>,
+                                            <a href="#" title="Supernatural">Supernatural</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Cadis Etrama Di Raizel,</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen - Our Last Crusade or the Rise of a New World, The Last Battlefield Between You and I, or Perhaps the Beginning of the World's Holy War, Kimisen (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-7gfmdVa2nN.jpg" alt="Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen - Our Last Crusade or the Rise of a New World, The Last Battlefield Between You and I, or Perhaps the Beginning of the World's Holy War, Kimisen (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</h6>
+                                            <span>Lượt xem: 41,982</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</h6>
+                                        <p><i class="fas fa-star"> 10</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Một cuộc đại chiến đã diễn ra trong nhiều năm giữa Đế chế và Nebulis được khoa học tiên tiến, vương quốc</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Silver Link</p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Romance">Romance</a>, <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Military">Military</a>, <a href="#" title="Action">Action</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Lou Nebulis IX Aliceliese,</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Osomatsu-san 3rd Season - Mr. Osomatsu (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-txz8Ep51sT.jpg" alt="Osomatsu-san 3rd Season - Mr. Osomatsu (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 5</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>07</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Osomatsu-san 3rd Season</h6>
+                                            <span>Lượt xem: 583</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Osomatsu-san 3rd Season</h6>
+                                        <p><i class="fas fa-star"> 5</i> <i class="far fa-clock"> 07/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Mùa 3 của Osomatsu-san.</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Studio Pierrot</p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Parody">Parody</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Matsuno Ichimatsu,</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Kuma Kuma Kuma Bear - The Bears Bear a Bare Kuma (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-a96tQIYzpN.jpg" alt="Kuma Kuma Kuma Bear - The Bears Bear a Bare Kuma (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Kuma Kuma Kuma Bear</h6>
+                                            <span>Lượt xem: 22,952</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Kuma Kuma Kuma Bear</h6>
+                                        <p><i class="fas fa-star"> 10</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Yuna mười lăm tuổi thích ở nhà và ám ảnh chơi VRMMO yêu thích của mình để làm bất cứ điều gì khác, kể cả</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> EMT Squared </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>, <a href="#" title="Adventure">Adventure</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Yuna, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Maoujou de Oyasumi - Sleepy Princess in the Demon Castle, Sleeping in Devil's Castle (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-EhDdFGIYGT.jpg" alt="Maoujou de Oyasumi - Sleepy Princess in the Demon Castle, Sleeping in Devil's Castle (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Maoujou de Oyasumi</h6>
+                                            <span>Lượt xem: 68,890</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Maoujou de Oyasumi</h6>
+                                        <p><i class="fas fa-star"> 10</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Sshhh! Công chúa Syalis đang cố ngủ một giấc thật ngon. Một số người nhắm mắt lại. Bốn mươi cái chớp mắt. Nắm bắt</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Doga Kobo </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="Slice of Life">Slice of Life</a>, <a href="#" title="Supernatural">Supernatural</a>, <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Comedy">Comedy</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Kaymin Aurora Suya Rhys, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Black Clover (TV) - Black Clover (2017), Black Clover, Thế Giới Phép Thuật (2017)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-IoEzyCjdCJ.jpg" alt="Black Clover (TV) - Black Clover (2017), Black Clover, Thế Giới Phép Thuật (2017)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.4</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>153</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Black Clover (TV)</h6>
+                                            <span>Lượt xem: 4,898,858</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Black Clover (TV)</h6>
+                                        <p><i class="fas fa-star"> 9.4</i> <i class="far fa-clock"> 153/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Asta và Yuno đã bị bỏ rơi cùng nhau tại cùng một nhà thờ và đã không thể tách rời kể từ đó. Khi còn trẻ, họ</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Studio Pierrot </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>, <a href="#" title="Comedy">Comedy</a> ,
+                                            <a href="#" title="Magic">Magic</a> ,<a href="#" title="Action">Action</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Asta, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Ikebukuro West Gate Park - Ikebukuro West Gate Park, IWGP (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/new_anime/animevsub-DYBcgEPPCV.jpg" alt="Ikebukuro West Gate Park - Ikebukuro West Gate Park, IWGP (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Ikebukuro West Gate Park</h6>
+                                            <span>Lượt xem: 1,648</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Ikebukuro West Gate Park</h6>
+                                        <p><i class="fas fa-star"> 10</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <span class="hd">HD Vietsub</span>
+                                        <p>Ikebukuro đầy tội phạm là thiên đường của các băng đảng bạo lực, Yakuza, và là quê hương của Makoto Majima. Để bảo</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Doga Kobo </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Romance">Romance</a>,
+                                            <a href="#" title="Drama">Drama</a>, <a href="#" title="Mystery">Mystery</a></p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Kyouichi, </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-more-anime">
+                            <a href="#">Xem thêm</a>
+                        </div>
+                        <!-- End New anime -->
+                        <!-- Anime comming soon -->
+                        <div class="list-anime">
+                            <div class="list-anime-header">
+                                <h3>Anime sắp chiếu <i class="fas fa-angle-right"></i> </h3>
+                            </div>
+                            <div class="flex-content">
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Kaifuku Jutsushi no Yarinaoshi - Redo of Healer, Kaiyari (2021)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-TIX3LuHC16.jpg" alt="Kaifuku Jutsushi no Yarinaoshi - Redo of Healer, Kaiyari (2021)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2021-01-01</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2021-01-01', 'time-0');
+                                                    </script>
+                                                    <p id="time-0"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Kaifuku Jutsushi no Yarinaoshi</h6>
+                                                <span>Lượt xem: 763</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Kaifuku Jutsushi no Yarinaoshi</h6>
+                                            <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2021</i> </p>
+                                            <p>Keare là một thường dân sống ở một ngôi làng bình dị, cho đến khi nhận được sức mạnh hồi phục và trở thành</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> TNK </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Fantasy ">Fantasy</a>, <a href="# " title="Ecchi ">Ecchi</a>,</p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Keyaru, </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Tsukiuta. The Animation 2 - Tsukiuta. The Animation Second Season, Tsukiani. 2 (2020)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-5uDdFvHLGe.jpg" alt="Tsukiuta. The Animation 2 - Tsukiuta. The Animation Second Season, Tsukiani. 2 (2020)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 5</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2020</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2020', 'time-1');
+                                                    </script>
+                                                    <p id="time-1"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Tsukiuta. The Animation 2</h6>
+                                                <span>Lượt xem: 646</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Tsukiuta. The Animation 2</h6>
+                                            <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/13</i> <i class="far fa-calendar-plus "> 2020</i> </p>
+                                            <p>Mùa 2 củaTsukiuta. The Animation.</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> Children's Playground Entertainment </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Music ">Music</a>
+                                            </p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Shimotsuki Shun, </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Guraburu! - Grablu! (2020)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-6Pki8GWA72.jpg" alt="Guraburu! - Grablu! (2020)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2020</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2020', 'time-2');
+                                                    </script>
+                                                    <p id="time-2"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Guraburu!</h6>
+                                                <span>Lượt xem: 304</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Guraburu!</h6>
+                                            <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2020</i> </p>
+                                            <p>Chuyển thể anime của Guraburu !, là manga 4-koma của Granblue Fantasy.</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> W-Toon Studio, DMM.futureworks </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Fantasy ">Fantasy</a>, <a href="# " title="Adventure ">Adventure</a>,</p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Lyria, </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Kaeru no Pickles: Kimochi no Iro -  (2020)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-YERZkxHlp1.jpg" alt="Kaeru no Pickles: Kimochi no Iro -  (2020)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 5</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2020</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2020', 'time-4');
+                                                    </script>
+                                                    <p id="time-4"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Kaeru no Pickles: Kimochi no Iro</h6>
+                                                <span>Lượt xem: 224</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Kaeru no Pickles: Kimochi no Iro</h6>
+                                            <p><i class="fas fa-star "> 5</i> <i class="far fa-clock "> ??/12</i> <i class="far fa-calendar-plus "> 2020</i> </p>
+                                            <p></p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> None found, add some </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Slice of Life ">Slice of Life</a></p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Updating</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Shingeki no Kyojin: The Final Season - Attack on Titan Final Season, Shingeki no Kyojin Season 4 (2020)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-5hnvRP8LjA.jpg" alt="Shingeki no Kyojin: The Final Season - Attack on Titan Final Season, Shingeki no Kyojin Season 4 (2020)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 8.5</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2020-12-07</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2020-12-07', 'time-5');
+                                                    </script>
+                                                    <p id="time-5"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Shingeki no Kyojin: The Final Season</h6>
+                                                <span>Lượt xem: 10,753</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Shingeki no Kyojin: The Final Season</h6>
+                                            <p><i class="fas fa-star "> 8.5</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2020</i> </p>
+                                            <p>Phần cuối của Shingeki no Kyojin.</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> MAPPA </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Shounen ">Shounen</a>, <a href="# " title="Super Power">Super Power</a>,
+                                                <a href="# " title="Fantasy">Fantasy</a>,<a href="# " title="Military">Military</a>, </p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Ackerman Mikasa, </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Rebirth -  (2020)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-Ez165FMbS8.jpg" alt="Rebirth -  (2020)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2020</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2020', 'time-6');
+                                                    </script>
+                                                    <p id="time-6"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Rebirth</h6>
+                                                <span>Lượt xem: 238</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Rebirth</h6>
+                                            <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2020</i> </p>
+                                            <p>Loạt phim xoay quanh một đội gồm 12 học sinh trung học thích chơi trò chơi giao dịch thẻ bài Rebirth For You</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> LIDENFILMS </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="#" title="Slice of Life ">Slice of Life</a>,
+                                                <a href="#" title="Game">Game</a>,<a href="#" title="Comedy">Comedy</a>, </p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Updating</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Gintama: The Final -  (2021)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-IUogfN3Fck.jpeg" alt="Gintama: The Final -  (2021)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 5</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2021-01-08</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2021-01-08', 'time-7');
+                                                    </script>
+                                                    <p id="time-7"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Gintama: The Final</h6>
+                                                <span>Lượt xem: 22,513</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Gintama: The Final</h6>
+                                            <p><i class="fas fa-star "> 5</i> <i class="far fa-clock "> Sắp chiếu</i> <i class="far fa-calendar-plus "> 2021</i> </p>
+                                            <p>Movie mới của Gintama.</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> None found, add some </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Shounen ">Shounen</a>,
+                                                <a href="#" title="Samurai">Samurai</a>,
+                                                <a href="#" title="Sci-Fi">Sci-Fi</a>,
+                                                <a href="#" title="Drama">Drama</a>, </p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Updating</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="item-anime-absol">
+                                    <a class="item-anime-link" href="#" title="Onihei - Onihei (2017)">
+                                        <div class="item-anime-content">
+                                            <img src="./images/Anime_coming_soon/animevsub-TxvjkVAkM0.jpg" alt="Onihei - Onihei (2017)">
+                                            <div class="item-anime-content-absol">
+                                                <div class="item-anime-content-info">
+                                                    <div class="px-2">
+                                                        <div class="item-anime-content-rank"><i class="fas fa-star"> 5</i></div>
+                                                    </div>
+                                                </div>
+                                                <div class="item-anime-content-date">
+                                                    <p>2017</p>
+                                                </div>
+                                                <div class="item-anime-content-time">
+                                                    <script>
+                                                        gettime('2017', 'time-8');
+                                                    </script>
+                                                    <p id="time-8"></p>
+                                                </div>
+                                                <div class=" item-anime-content-play "><i class="fas fa-play-circle "></i></div>
+                                            </div>
+
+                                            <div class="item-anime-content-mix-color "></div>
+                                            <div class="item-anime-content-name ">
+                                                <h6>Onihei</h6>
+                                                <span>Lượt xem: 2,077</span>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <div class="item-content-sub-detail ">
+                                        <div class="px-2">
+                                            <h6>Onihei</h6>
+                                            <p><i class="fas fa-star "> 5</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2017</i> </p>
+                                            <p>Series tiểu thuyết lịch sử theo bước chân của Heizō Hasegawa - người mang công lý để trừng phạt bọn tội phạm</p>
+                                            <p><i class="fas fa-video "></i><span> Studio:</span> M2 </p>
+                                            <p><i class="fas fa-film "></i><span> Thể Loại:</span> <a href="# " title="Seinen ">Seinen</a>,
+                                                <a href="# " title="Historical">Historical</a></p>
+                                            <p><i class="fas fa-user "></i> <span> Diễn Viên</span> Hasegawa Heizou, </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-more-anime ">
+                            <a href="# ">Xem thêm</a>
+                        </div>
+                        <!-- End Anime Comming soon -->
+                        <!-- Anime nomination -->
+                        <div class="list-anime">
+                            <div class="list-anime-header">
+                                <h3>Anime đề xuất <i class="fas fa-angle-right" style="display: inline-block;"></i> </h3>
+                                <ul id="list-active-anime-nomination">
+                                    <li><a class="actives" href="javascript:void(0)"><span>Xem nhiều hôm nay</span></a></li>
+                                    <li><a href="javascript:void(0)"><span>Tháng</span></a></li>
+                                    <li><a href="javascript:void(0)"><span>Được yêu thích</span></a></li>
+                                </ul>
+                                <script>
+                                    active("list-active-anime-nomination", 1);
+                                </script>
+                            </div>
+                        </div>
+                        <div class="flex-content">
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Beelzebub - Vua Quỷ (2011)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-28013.jpg" alt="Beelzebub - Vua Quỷ (2011)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.6</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Beelzebub</h6>
+                                            <span>Lượt xem: 684,129</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Beelzebub</h6>
+                                        <p><i class="fas fa-star"> 9.6</i> <i class="far fa-clock"> 60/60</i> <i class="far fa-calendar-plus"> 2011</i> </p>
+                                        <p>Nội dung sơ sơ thì chắc ai cũng biết rồi, thì là câu chuyện xoay quanh Oga Tatsumi, người được coi là gã côn đồ</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Pierrot Plus </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="School">School</a>,
+                                            <a href="#" title="Supernatural">Supernatural</a>,
+                                            <a href="#" title="Demons">Demons</a>,
+                                            <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Action">Action</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Oga Tatsumi, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai - SHIMONETABD : A Boring World Where the Concept of Dirty Jokes Doesn' Exist, Shimoseka (2015)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-CqE8sEmV63.jpg" alt="Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai - SHIMONETABD : A Boring World Where the Concept of Dirty Jokes Doesn' Exist, Shimoseka (2015)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.6</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai</h6>
+                                            <span>Lượt xem: 302,980</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai</h6>
+                                        <p><i class="fas fa-star"> 9.3</i> <i class="far fa-clock"> 12/12</i> <i class="far fa-calendar-plus"> 2015</i> </p>
+                                        <p>Bản BD( Bluray Disc ) của Shimoneta To Iu Gainen Ga Sonzai Shinai Taikutsu Na Sekai: Câu chuyện đặt trong bối cảnh 16 năm sau...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> J.C.Staff </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="School">School</a>,
+                                            <a href="#" title="Ecchi">Ecchi</a>,
+                                            <a href="#" title="Comedy">Comedy</a>, </p>
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Kajou Ayame, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="One Piece - Vua Hải Tặc - Đảo Hải Tặc (1999)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-sQCBqYz9ve.jpg" alt="One Piece - Vua Hải Tặc - Đảo Hải Tặc (1999)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.1</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>951</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>One Piece - Vua Hải Tặc</h6>
+                                            <span>Lượt xem: 16,844,993</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>One Piece - Vua Hải Tặc</h6>
+                                        <p><i class="fas fa-star"> 9.1</i> <i class="far fa-clock"> 951/???</i> <i class="far fa-calendar-plus"> 1999</i> </p>
+                                        <p>One Piece xoay quanh 1 nhóm cướp biển được gọi là Băng Hải tặc Mũ Rơm - Straw Hat Pirates - được thành lập và lãnh...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Toei Animation </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="Super Power">Super Power</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Drama">Drama</a>, <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Adventure">Adventure</a>,
+                                            <a href="#" title="Action">Action</a>,</p>
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Monkey D. Luffy, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Prison School - Prison School, Kangoku Gakuen, Trường Học Ngục Tù (2015)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-oAOUs4veyY.jpg" alt="Prison School - Prison School, Kangoku Gakuen, Trường Học Ngục Tù (2015)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 10</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Prison School</h6>
+                                            <span>Lượt xem: 113,055</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Prison School</h6>
+                                        <p><i class="fas fa-star"> 10</i> <i class="far fa-clock"> 12/12</i> <i class="far fa-calendar-plus"> 2015</i> </p>
+                                        <p>Học viện tư thục Hachimitsu ở Tokyo đó giờ là một trường học danh giá chỉ dành riêng cho con gái. Nhưng mà “lại”...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> J.C.Staff </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Seinen">Seinen</a>,
+                                            <a href="#" title="School">School</a>,
+                                            <a href="#" title="Romance">Romance</a>,
+                                            <a href="#" title="Ecchi">Ecchi</a>,
+                                            <a href="#" title="Comedy">Comedy</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Morokuzu Takehito, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Jujutsu Kaisen (TV) - Sorcery Fight (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-XI9GXfbHY4.jpg" alt="Jujutsu Kaisen (TV) - Sorcery Fight (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.6</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Jujutsu Kaisen (TV)</h6>
+                                            <span>Lượt xem: 145,377</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Jujutsu Kaisen (TV)</h6>
+                                        <p><i class="fas fa-star"> 9.6</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> </i> </p>
+                                        <p>Trong một thế giới nơi những con quỷ ăn thịt người không nghi ngờ gì, những mảnh vỡ của con quỷ huyền thoại...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> MAPPA </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="School">School</a>,
+                                            <a href="#" title="Supernatural">Supernatural</a>,
+                                            <a href="#" title="Demons">Demons</a>,
+                                            <a href="#" title="Horror">Horror</a>,
+                                            <a href="#" title="Action">Action</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Satoru Gojou, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Nanatsu no Taizai: Imashime no Fukkatsu - The Seven Deadly Sins: Revival of the Commandments, Thất Hình Đại Tội Phần 2 (2018)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-SGkATylhKL.jpg" alt="Nanatsu no Taizai: Imashime no Fukkatsu - The Seven Deadly Sins: Revival of the Commandments, Thất Hình Đại Tội Phần 2 (2018)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.5</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Nanatsu no Taizai: Imashime no Fukkatsu</h6>
+                                            <span>Lượt xem: 1,640,533</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Nanatsu no Taizai: Imashime no Fukkatsu</h6>
+                                        <p><i class="fas fa-star"> 9.5</i> <i class="far fa-clock"> 24/24</i> <i class="far fa-calendar-plus"> 2018</i> </p>
+                                        <p>Phần 2 của bộ Nanatsu no Taizai</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> A-1 Pictures </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="Supernatural">Supernatural</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Action">Action</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Ban, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III - Is It Wrong to Try to Pick Up Girls in a Dungeon? III, DanMachi 3rd Season, Is It Wrong That I Want to Meet You in a Dungeon 3rd Season (2020)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-nOtd5pmG13.jpg" alt="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III - Is It Wrong to Try to Pick Up Girls in a Dungeon? III, DanMachi 3rd Season, Is It Wrong That I Want to Meet You in a Dungeon 3rd Season (2020)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.6</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>08</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</h6>
+                                            <span>Lượt xem: 66,092</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</h6>
+                                        <p><i class="fas fa-star"> 9.6</i> <i class="far fa-clock"> 08/??</i> <i class="far fa-calendar-plus"> 2020</i> </p>
+                                        <p>Mùa 3 của Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka.</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> J.C.Staff </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Romance">Romance</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Adventure">Adventure</a>,
+                                            <a href="#" title="Action">Action</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span></p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol">
+                                <a class="item-anime-link" href="#" title="Thức Tỉnh Ở Thế Giới Khác - In Another World With My Smartphone, In a Different World with a Smartphone, Isekai wa Smartphone to Tomo ni. (2017)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-ywXW5jt97B.jpg" alt="Thức Tỉnh Ở Thế Giới Khác - In Another World With My Smartphone, In a Different World with a Smartphone, Isekai wa Smartphone to Tomo ni. (2017)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 3.2</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Thức Tỉnh Ở Thế Giới Khác</h6>
+                                            <span>Lượt xem: 442,410</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Thức Tỉnh Ở Thế Giới Khác</h6>
+                                        <p><i class="fas fa-star"> 3.2</i> <i class="far fa-clock"> 12/12</i> <i class="far fa-calendar-plus"> 2017</i> </p>
+                                        <p>Touya Mochizuki đã bị giết oan, và như một lời xin lỗi, Thiên Chúa đã cho phép cậu ta được tái sinh trong một thế...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Production Reed </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Romance">Romance</a>,
+                                            <a href="#" title="Harem">Harem</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Adventure">Adventure</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Mochizuki Touya, </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="show-more-anime ">
+                            <a href="# ">Xem thêm</a>
+                        </div>
+                        <!-- End Anime nomination -->
+                    </section>
+                    <!-- End Content -->
+                </div>
+                <div class="col-30 ">
+                    <!-- Content -->
+                    <section>
+                        <div class="content">
+                            <div class="px-2">
+                                <h4>Hôm nay xem gì ?</h4>
+                                <hr>
+                                <p>Nếu bạn buồn phiền không biết xem gì hãy để chúng tôi lựa chọn cho bạn</p>
+                                <a href="#"><button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Anime <b>Ngẫu nhiên</b></button></a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div class="content">
+                            <div class="px-2">
+                                <h4>Anime mới cập nhật</h4>
+                                <hr>
+                                <div class="list-anime-update">
+                                    <ul>
+                                        <li>
+                                            <a href="# ">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right "></i>Golden Kamuy 3rd Season</span>
+                                                    <span class="list-anime-ep">Tập 07</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Noblesse</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</span>
+                                                    <span class="list-anime-ep ">Tập 08</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Kuma Kuma Kuma Bear</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Black Clover (TV)</span>
+                                                    <span class="list-anime-ep">Tập 153</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Maoujou de Oyasumi</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Ikebukuro West Gate Park</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Magatsu Wahrheit: Zuerst</span>
+                                                    <span class="list-anime-ep">Tập 07</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Kamen Rider Saber</span>
+                                                    <span class="list-anime-ep">Tập 11</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <span><i class="fas fa-angle-right"></i>Xem thêm...</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </section>
+
+                    <section>
+
+                    </section>
+                    <!-- End Content -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Body -->
+    <!-- Footer -->
+    <div class=" footer ">
+
+    </div>
+    <!-- End Footer -->
+</body>
+<script src="./js/scroll.js "></script>
+<script src="./js/nav.js"></script>
+<script>
+    //Move banner
+    $('.slide-banner').jdSlider();
+
+    function login() {
+        Swal.fire({
+            title: 'Đăng nhập',
+            html: '<input type="text " id="login " class="swal2-input " placeholder="Username ">' +
+                '<input type="password " id="password " class="swal2-input " placeholder="Password ">',
+            confirmButtonText: 'Đăng nhập',
+            focusConfirm: false,
+            preConfirm: () => {
+                const login = Swal.getPopup().querySelector('#login').value
+                const password = Swal.getPopup().querySelector('#password').value
+                if (!login || !password) {
+                    Swal.showValidationMessage(`Xin vui lòng nhập tên đăng nhập và mật khẩu`)
+                }
+                return {
+                    login: login,
+                    password: password
+                }
+            }
+        }).then((result) => {
+            Swal.fire(`Login: ${result.value.login} Password: ${result.value.password}`.trim())
+        })
+    }
+</script>
+
+</html>
