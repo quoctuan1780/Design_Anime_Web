@@ -14,6 +14,52 @@
 
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <script type="text/javascript">
+        jssor_1_slider_init = function() {
+
+            var jssor_1_options = {
+                $AutoPlay: 1,
+                $AutoPlaySteps: 1,
+                $SlideDuration: 160,
+                $SlideWidth: 200,
+                $SlideSpacing: 3,
+                $ArrowNavigatorOptions: {
+                    $Class: $JssorArrowNavigator$,
+                    $Steps: 6
+                },
+                $BulletNavigatorOptions: {
+                    $Class: $JssorBulletNavigator$
+                }
+            };
+
+            var jssor_1_slider = new $JssorSlider$("jssor_1", jssor_1_options);
+
+            /*#region responsive code begin*/
+
+            var MAX_WIDTH = 980;
+
+            function ScaleSlider() {
+                var containerElement = jssor_1_slider.$Elmt.parentNode;
+                var containerWidth = containerElement.clientWidth;
+
+                if (containerWidth) {
+
+                    var expectedWidth = Math.min(MAX_WIDTH || containerWidth, containerWidth);
+
+                    jssor_1_slider.$ScaleWidth(expectedWidth);
+                } else {
+                    window.setTimeout(ScaleSlider, 30);
+                }
+            }
+
+            ScaleSlider();
+
+            $Jssor$.$AddEvent(window, "load", ScaleSlider);
+            $Jssor$.$AddEvent(window, "resize", ScaleSlider);
+            $Jssor$.$AddEvent(window, "orientationchange", ScaleSlider);
+            /*#endregion responsive code end*/
+        };
+    </script>
 </head>
 
 <body>
@@ -119,7 +165,7 @@
                     <div class="search-container" id="search">
                         <form action="#" class="form">
                             <div class="form-group">
-                                <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                                <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" name="search">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
@@ -138,7 +184,7 @@
         <div class="search-container-responsive" id="search">
             <form action="#" class="form">
                 <div class="form-group">
-                    <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                    <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </form>
