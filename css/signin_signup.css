@@ -1,5 +1,5 @@
 /*Sign up*/
-.form-group {
+.form-login {
     position: relative;
     min-height: 3.5em;
     width: 60%;
@@ -12,14 +12,14 @@
     font-weight: bold;
 }
 
-.form{
+#formsignup{
+    padding: 5%;
+    margin-right: 2%;
     background-color: #263238;
-    padding-top: 50px;
-    padding-bottom: 50px;
 }
 
   input.form-control {
-    height: 2em;
+    height: auto;
     position: absolute;
     top: 0;
     left: 0;
@@ -27,6 +27,8 @@
     outline: 0;
     background: left;
     text-indent: 1cm;
+    width: 100%;
+    color: darkgrey;
     border-bottom: 1px solid black;
   }
   
@@ -64,7 +66,7 @@ border: 2px solid yellow;
 
 .login-text{
     text-align: left;
-    width: 60%;
+    width: 80%;
     color: rgb(139, 138, 138);
     margin: auto;
     
