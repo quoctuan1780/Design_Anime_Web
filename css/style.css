@@ -1,5 +1,7 @@
 /*Sign up*/
-.form-group {
+
+
+/* .form-group {
     position: relative;
     min-height: 3.5em;
     width: 60%;
@@ -68,8 +70,11 @@ border: 2px solid yellow;
     color: rgb(139, 138, 138);
     margin: auto;
     
-}
+} */
+
+
 /*end sign up*/
+
 body {
     background-color: #263238;
     background-attachment: fixed;
