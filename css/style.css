@@ -878,6 +878,11 @@ section {
     margin-bottom: 10px;
 }
 
+.content-rank a {
+    padding: 10px;
+    color: #FFF;
+}
+
 
 /* End content */
 
