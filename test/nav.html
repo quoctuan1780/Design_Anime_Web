@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Basic Responsive Header Dropdown Menu Example</title>
+    <!-- <link href="https://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"> -->
+    <link rel="stylesheet" type="text/css" href="./style-nav.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#">
+                <img src="http://cdn.animevietsub.tv/data/logo/logoz.png" alt="Logo">
+            </a>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+
+                <li class="sub-menu"><a href="#">Dạng anime</a>
+                    <ul>
+                        <li><a href="#">TV/Series</a></li>
+                        <li><a href="#">Movie/OVA</a></li>
+                        <li><a href="#">Anime Sắp Chiếu</a></li>
+                        <li><a href="#">Anime Đang Chiếu</a></li>
+                        <li><a href="#">Anime Trọn Bộ</a></li>
+                        <li><a href="#">Anime Được Yêu Thích</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Top anime</a>
+                    <ul>
+                        <li><a href="#">Theo Ngày</a></li>
+                        <li><a href="#">Theo Tháng</a></li>
+                        <li><a href="#">Theo Mùa</a></li>
+                        <li><a href="#">Theo Năm</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Thể loại</a>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Cartoon</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Dementia</a></li>
+                        <li><a href="#">Demons</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Ecchi</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Harem</a></li>
+                        <li><a href="#">Historical</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Josei</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Live Action</a></li>
+                        <li><a href="#">Magic</a></li>
+                        <li><a href="#">Martial Arts</a></li>
+                        <li><a href="#">Mecha</a></li>
+                        <li><a href="#">Military</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Parody</a></li>
+                        <li><a href="#">Police</a></li>
+                        <li><a href="#">Psychological</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Samurai</a></li>
+                        <li><a href="#">School</a></li>
+                        <li><a href="#">Sci-Fi</a></li>
+                        <li><a href="#">Seinen</a></li>
+                        <li><a href="#">Shoujo</a></li>
+                        <li><a href="#">Shoujo Ai</a></li>
+                        <li><a href="#">Shounen</a></li>
+                        <li><a href="#">Shounen Ai</a></li>
+                        <li><a href="#">Slice of Life</a></li>
+                        <li><a href="#">Space</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Super Power</a></li>
+                        <li><a href="#">Supernatural</a></li>
+                        <li><a href="#">Thriller</a></li>
+                        <li><a href="#">Tokusatsu</a></li>
+                        <li><a href="#">Vampire</a></li>
+                        <li><a href="#">Yaoi</a></li>
+                        <li><a href="">Yuri</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="#">Season</a>
+                    <ul>
+                        <li><a href="#">Mùa Đông 2020</a></li>
+                        <li><a href="#">Mùa Xuân 2020</a></li>
+                        <li><a href="#">Mùa Hạ 2020</a></li>
+                        <li><a href="#">Mùa Thu 2020</a></li>
+                        <li><a href="#">Mùa Đông 2019</a></li>
+                        <li><a href="#">Mùa Xuân 2019</a></li>
+                        <li><a href="#">Mùa Hạ 2019</a></li>
+                        <li><a href="#">Mùa Thu 2019</a></li>
+                        <li><a href="#">Mùa Đông 2018</a></li>
+                        <li><a href="#">Mùa Xuân 2018</a></li>
+                        <li><a href="#">Mùa Hạ 2018</a></li>
+                        <li><a href="#">Mùa Thu 2018</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Thư viện</a></li>
+                <li><a href="#">Lịch chiếu</a></li>
+                <li class="child">
+                    <div class="search-container" id="search">
+                        <form action="#" class="form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Search.." name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="child">
+                    <div id="btn-login">
+                        <input type="button" class="btn btn-danger btn-size" value="Đăng nhập">
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="search-container-responsive" id="search">
+            <form action="#" class="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Search.." name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+
+</body>
+<script src="../js/jquery.js"></script>
+
+<script src="./theme.js"></script>
+<!-- <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+</script> -->
+<!-- <script>
+    try {
+        fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", {
+            method: 'HEAD',
+            mode: 'no-cors'
+        })).then(function(response) {
+            return true;
+        }).catch(function(e) {
+            var carbonScript = document.createElement("script");
+            carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+            carbonScript.id = "_carbonads_js";
+            document.getElementById("carbon-block").appendChild(carbonScript);
+        });
+    } catch (error) {
+        console.log(error);
+    }
+</script> -->
+
+</html>

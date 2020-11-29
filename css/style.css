@@ -1,6 +1,21 @@
 body {
     background-color: #263238;
     background-attachment: fixed;
+    font-family: alata, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.px-2 {
+    padding: 5px;
+}
+
+.container {
+    width: 75%;
+    padding: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
 }
 
 .flex-container {
@@ -20,57 +35,200 @@ body {
 
 /* nav */
 
-.navbar {
-    background-color: #0f1416;
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        visibility: hidden;
+        transform: scaleY(0);
+    }
+    to {
+        opacity: 1;
+        visibility: visible;
+        transform: scaleY(1);
+    }
 }
 
-.nav-text-color {
-    color: white;
-    font-size: 16px;
+
+/* Search + btn */
+
+input[type=text] {
+    margin-top: 5px;
+    padding: 6px;
+    font-size: 14px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
 }
 
-.nav-item a {
-    color: white;
+.search-container button {
+    margin-right: 16px;
+    padding: 6px 10px;
+    background: #ddd;
+    font-size: 14px;
+    margin-left: -5px;
+    cursor: pointer;
 }
 
-.nav-item a:hover {
-    background-color: #764ba2;
-}
-
-.dropdown {
-    position: relative;
+.btn {
     display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    border: 1px solid transparent;
+    cursor: pointer;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 4px;
 }
 
-.dropdown-content {
-    display: none;
+.btn-danger {
+    color: #fff;
+    background-color: #c52b26;
+    border-color: #d43f3a;
+}
+
+.btn:hover {
+    background-color: #d43f3a;
+}
+
+.search-container {
+    margin-top: 3px;
+}
+
+.btn-size {
+    margin-top: 7px;
+}
+
+
+/* Header */
+
+header {
     position: absolute;
-    background-color: #f1f1f1;
-    max-width: 480px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    width: max-content;
-}
-
-.dropdown-content a {
-    color: black;
-    text-decoration: none;
-    display: block;
-    padding: 10px;
-    flex-grow: 1;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
-}
-
-.dropdown:hover .dropdown-content {
+    top: 0;
+    left: 0;
+    padding: 0 100px;
+    background: #0f1416;
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
     display: flex;
-    width: max-content;
     flex-direction: row;
     flex-wrap: wrap;
-    padding: 10px;
     justify-content: center;
+    align-items: center;
+}
+
+
+/* LOGO */
+
+header .logo {
+    color: #FFF;
+    height: 50px;
+    line-height: 50px;
+    font-size: 24px;
+    float: left;
+    font-weight: bold;
+}
+
+.logo a img {
+    padding: 5px;
+    width: 110px;
+    height: 40px;
+}
+
+
+/* Dropdown Nav */
+
+header nav {
+    float: left;
+}
+
+
+/* UL */
+
+header nav ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+
+/* Nav Items */
+
+header nav ul li {
+    list-style: none;
+    position: relative;
+}
+
+
+/* Sub-menu */
+
+header nav ul li.sub-menu:before {
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #FFF;
+    right: 5px;
+    cursor: pointer;
+}
+
+.sub-menu ul {
+    max-width: 640px;
+    max-height: 240px;
+    width: 620px;
+    height: auto;
+    overflow-y: hidden;
+    z-index: 1;
+}
+
+.sub-menu ul li {
+    float: left;
+}
+
+header nav ul li ul {
+    position: absolute;
+    left: 0;
+    background: #333;
+    display: none;
+    transition: 0.5s;
+    animation: fade-in 0.5s ease;
+}
+
+header nav ul li ul li {
+    display: block;
+    width: 200px;
+}
+
+header nav ul li a {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: #FFF;
+    text-decoration: none;
+    display: block;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+    color: #FFF;
+    /* background: #2196f3; */
+}
+
+
+/* Toggle Button */
+
+.menu-toggle {
+    color: #FFF;
+    float: right;
+    line-height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.search-container-responsive {
+    display: none;
 }
 
 
@@ -121,6 +279,8 @@ body {
     left: 0%;
     top: 0%;
     border-radius: 10px;
+    width: 100%;
+    height: 99%;
 }
 
 .center .px-2 {
@@ -131,7 +291,6 @@ body {
 
 .item-anime-horizontal div {
     padding: 10px;
-    margin-left: 5px;
 }
 
 .item-anime-rank {
@@ -160,10 +319,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 215px;
+    height: 200px;
     color: rgb(255, 255, 255);
-    padding-bottom: 10%;
     transition: .5s;
+}
+
+.item-anime-title span {
+    text-align: center;
 }
 
 .item-anime-play {
@@ -188,6 +350,8 @@ body {
 
 .item-anime:hover .item-anime-horizontal {
     transition: 0.5 all;
+    width: 100%;
+    height: 99%;
     background-color: rgba(81, 77, 77, 0.6);
     border-radius: 10px;
 }
@@ -212,6 +376,10 @@ body {
     max-width: fit-content;
 }
 
+.banner-image:active {
+    cursor: all-scroll;
+}
+
 .banner-image img {
     width: 100%;
     max-width: fit-content;
@@ -227,7 +395,7 @@ body {
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 100%;
+    height: 99%;
     background-color: rgba(81, 77, 77, 0.2);
     border-radius: 10px;
     transition: all 0.5s;
@@ -241,7 +409,7 @@ body {
     padding-top: 5px;
     background-color: rgba(81, 77, 77, 0.4);
     width: 60%;
-    height: 100%;
+    height: 98%;
     border-radius: 10px;
     color: white;
     transition: all 0.5s;
@@ -265,13 +433,19 @@ body {
 }
 
 .banner-content button {
-    margin-bottom: 5%;
+    margin-bottom: 10%;
 }
 
 .banner-decription p a {
     text-decoration: none;
     color: #FFF;
-    font-size: 16px;
+    font-size: 14px;
+}
+
+.banner-decription p {
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
 }
 
 .banner-decription p a i {
@@ -299,7 +473,11 @@ body {
 }
 
 .fa-user-circle {
-    font-size: 32px;
+    font-size: 28px;
+}
+
+.banner-cast {
+    margin-top: -1rem;
 }
 
 .banner-cast p {
@@ -330,15 +508,15 @@ body {
     background-color: #b5e745;
 }
 
+.btn-banner {
+    margin-top: -1rem;
+}
+
 
 /* End Banner */
 
 
 /* Content */
-
-.list-anime {
-    padding-top: 2rem;
-}
 
 .list-anime-header {
     display: flex;
@@ -349,6 +527,7 @@ body {
 
 .list-anime-header h3 {
     color: #FFFFFF;
+    font-size: 28px;
 }
 
 .list-anime-header h3 i {
@@ -456,7 +635,7 @@ body {
     left: 0%;
     top: 0%;
     width: 100%;
-    height: 210px;
+    height: 98%;
     opacity: 0;
     background: rgba(0, 0, 0, .2);
     border-radius: 5px;
@@ -474,7 +653,13 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
     overflow: hidden;
-    padding-top: 5px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+.item-anime-content-name span {
+    margin-top: -2rem;
     font-size: 16px;
 }
 
@@ -578,6 +763,8 @@ body {
     color: #0f1416;
     font-weight: bold;
     font-size: 18px;
+    padding: 0;
+    margin: 0;
 }
 
 .item-content-sub-detail div p {
@@ -639,7 +826,7 @@ body {
 
 .item-anime-content-time {
     position: absolute;
-    bottom: 18%;
+    bottom: 15%;
     left: 0%;
     width: 100%;
 }
@@ -674,7 +861,7 @@ section {
 }
 
 .content h4 {
-    padding-top: 5px;
+    font-size: 22px;
 }
 
 .content hr {
@@ -1042,6 +1229,145 @@ section {
         bottom: -6%;
     }
 }
+
+
+/*Nav responsive*/
+
+@media (min-width: 1130px) {
+    header nav ul li:hover ul {
+        display: block;
+        animation: fade-in 0.5s ease;
+    }
+    header nav ul li:hover.sub-menu:before {
+        content: '\f0d8';
+    }
+    .sub-menu ul:hover {
+        overflow-y: scroll;
+    }
+    .sub-menu ul li:hover a {
+        color: gainsboro;
+    }
+}
+
+@media (min-width: 1135px) and (max-width: 1249px) {
+    header nav ul li:hover ul {
+        display: block;
+        animation: fade-in 0.5s ease;
+    }
+    header nav ul li:hover.sub-menu:before {
+        content: '\f0d8';
+    }
+    .sub-menu ul:hover {
+        overflow-y: scroll;
+    }
+    .sub-menu ul li:hover a {
+        color: gainsboro;
+    }
+    nav ul li a {
+        font-size: 14px;
+        padding: 4px;
+    }
+    input[type=text] {
+        margin-top: 5px;
+        padding: 6px;
+        font-size: 10px;
+        width: 40%;
+        border-bottom-left-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+    .search-container button {
+        margin-right: 16px;
+        padding: 6px 10px;
+        background: #ddd;
+        font-size: 10px;
+        margin-left: -5px;
+    }
+    .btn {
+        font-size: 12px;
+        margin-left: -2rem;
+    }
+}
+
+@media (max-width: 1135px) {
+    header nav ul li.active.sub-menu:before {
+        content: '\f0d8';
+    }
+    header nav ul li.active ul {
+        display: block;
+    }
+    header {
+        padding: 0 20px;
+        display: block;
+    }
+    .menu-toggle {
+        display: block;
+    }
+    header nav {
+        position: absolute;
+        width: 50%;
+        height: calc(100vh - 50px);
+        background: rgba(0, 0, 0, .6);
+        top: 50px;
+        left: -100%;
+        transition: 0.5s;
+        z-index: 2;
+    }
+    .mix-color-nav {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: #263238;
+        opacity: 0.6;
+    }
+    header nav.active {
+        left: 0;
+    }
+    header nav ul {
+        display: block;
+    }
+    header nav ul li a {
+        border-bottom: 1px solid rgba(0, 0, 0, .2);
+    }
+    header nav ul li.active ul {
+        position: relative;
+        background: #333232;
+    }
+    header nav ul li ul li a:hover {
+        color: #C1C1C1;
+    }
+    .sub-menu ul {
+        max-width: unset;
+        max-height: 240px;
+        width: 100%;
+        height: auto;
+        overflow-y: scroll;
+    }
+    .sub-menu ul li {
+        float: left;
+    }
+    .form-group {
+        padding: 10px;
+    }
+    .search-container {
+        display: none;
+    }
+    .search-container-responsive {
+        display: block;
+        float: right;
+        padding: 0;
+        margin-top: -10px;
+    }
+    .search-container-responsive .form .form-group button {
+        padding: 6px;
+    }
+    #btn-login {
+        text-align: center;
+    }
+}
+
+
+/* End nav responsive */
 
 
 /* End Custom responsive */

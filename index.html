@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anime</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://kit.fontawesome.com/4c9eabfb23.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="./js/jquery.js"></script>
@@ -17,130 +13,143 @@
     <script src="./js/active.js"></script>
 
     <link rel="stylesheet" href="./css/style.css" type="text/css">
-    <link rel="stylesheet" href="./css/common.min.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-light px-5 navbar-mix-color">
-            <a class="navbar-brand" href="./index.html">
+        <div class="logo">
+            <a href="#">
                 <img src="http://cdn.animevietsub.tv/data/logo/logoz.png" alt="Logo">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        </div>
+        <nav>
+            <div class="mix-color-nav"></div>
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span class="nav-text-color">Trang chủ</span> </a>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Dạng anime</span></a>
-                            <div class="dropdown-content">
-                                <a href="#">TV/Series</a>
-                                <a href="#">Movie/OVA</a>
-                                <a href="#">Anime Sắp Chiếu</a>
-                                <a href="#">Anime Đang Chiếu</a>
-                                <a href="#">Anime Trọn Bộ</a>
-                                <a href="#">Anime Được Yêu Thích</a>
+                <li class="sub-menu"><a href="#">Dạng anime</a>
+                    <ul>
+                        <li><a href="#">TV/Series</a></li>
+                        <li><a href="#">Movie/OVA</a></li>
+                        <li><a href="#">Anime Sắp Chiếu</a></li>
+                        <li><a href="#">Anime Đang Chiếu</a></li>
+                        <li><a href="#">Anime Trọn Bộ</a></li>
+                        <li><a href="#">Anime Được Yêu Thích</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Top anime</a>
+                    <ul>
+                        <li><a href="#">Theo Ngày</a></li>
+                        <li><a href="#">Theo Tháng</a></li>
+                        <li><a href="#">Theo Mùa</a></li>
+                        <li><a href="#">Theo Năm</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Thể loại</a>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Cartoon</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Dementia</a></li>
+                        <li><a href="#">Demons</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Ecchi</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Harem</a></li>
+                        <li><a href="#">Historical</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Josei</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Live Action</a></li>
+                        <li><a href="#">Magic</a></li>
+                        <li><a href="#">Martial Arts</a></li>
+                        <li><a href="#">Mecha</a></li>
+                        <li><a href="#">Military</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Parody</a></li>
+                        <li><a href="#">Police</a></li>
+                        <li><a href="#">Psychological</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Samurai</a></li>
+                        <li><a href="#">School</a></li>
+                        <li><a href="#">Sci-Fi</a></li>
+                        <li><a href="#">Seinen</a></li>
+                        <li><a href="#">Shoujo</a></li>
+                        <li><a href="#">Shoujo Ai</a></li>
+                        <li><a href="#">Shounen</a></li>
+                        <li><a href="#">Shounen Ai</a></li>
+                        <li><a href="#">Slice of Life</a></li>
+                        <li><a href="#">Space</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Super Power</a></li>
+                        <li><a href="#">Supernatural</a></li>
+                        <li><a href="#">Thriller</a></li>
+                        <li><a href="#">Tokusatsu</a></li>
+                        <li><a href="#">Vampire</a></li>
+                        <li><a href="#">Yaoi</a></li>
+                        <li><a href="">Yuri</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="#">Season</a>
+                    <ul>
+                        <li><a href="#">Mùa Đông 2020</a></li>
+                        <li><a href="#">Mùa Xuân 2020</a></li>
+                        <li><a href="#">Mùa Hạ 2020</a></li>
+                        <li><a href="#">Mùa Thu 2020</a></li>
+                        <li><a href="#">Mùa Đông 2019</a></li>
+                        <li><a href="#">Mùa Xuân 2019</a></li>
+                        <li><a href="#">Mùa Hạ 2019</a></li>
+                        <li><a href="#">Mùa Thu 2019</a></li>
+                        <li><a href="#">Mùa Đông 2018</a></li>
+                        <li><a href="#">Mùa Xuân 2018</a></li>
+                        <li><a href="#">Mùa Hạ 2018</a></li>
+                        <li><a href="#">Mùa Thu 2018</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Thư viện</a></li>
+                <li><a href="#">Lịch chiếu</a></li>
+                <li class="child">
+                    <div class="search-container" id="search">
+                        <form action="#" class="form">
+                            <div class="form-group">
+                                <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                                <button type="submit"><i class="fa fa-search"></i></button>
                             </div>
-
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Top anime</span></a>
-                                <div class="dropdown-content">
-                                    <a href="#">Theo Ngày</a>
-                                    <a href="#">Theo Tháng</a>
-                                    <a href="#">Theo Mùa</a>
-                                    <a href="#">Theo Năm</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Thể loại</span></a>
-                                <div class="dropdown-content">
-                                    <a href="#">Action</a>
-                                    <a href="#">Adventure</a>
-                                    <a href="#">Cartoon</a>
-                                    <a href="#">Comedy</a>
-                                    <a href="#">Dementia</a>
-                                    <a href="#">Demons</a>
-                                    <a href="#">Drama</a>
-                                    <a href="#">Ecchi</a>
-                                    <a href="#">Fantasy</a>
-                                    <a href="#">Game</a>
-                                    <a href="#">Harem</a>
-                                    <a href="#">Historical</a>
-                                    <a href="#">Horror</a>
-                                    <a href="#">Josei</a>
-                                    <a href="#">Kids</a>
-                                    <a href="#">Live Action</a>
-                                    <a href="#">Magic</a>
-                                    <a href="#">Martial Arts</a>
-                                    <a href="#">Mecha</a>
-                                    <a href="#">Military</a>
-                                    <a href="#">Music</a>
-                                    <a href="#">Mystery</a>
-                                    <a href="#">Parody</a>
-                                    <a href="#">Police</a>
-                                    <a href="#">Psychological</a>
-                                    <a href="#">Romance</a>
-                                    <a href="#">Samurai</a>
-                                    <a href="#">School</a>
-                                    <a href="#">Sci-Fi</a>
-                                    <a href="#">Seinen</a>
-                                    <a href="#">Shoujo</a>
-                                    <a href="#">Shoujo Ai</a>
-                                    <a href="#">Shounen</a>
-                                    <a href="#">Shounen Ai</a>
-                                    <a href="#">Slice of Life</a>
-                                    <a href="#">Space</a>
-                                    <a href="#">Sports</a>
-                                    <a href="#">Super Power</a>
-                                    <a href="#">Supernatural</a>
-                                    <a href="#">Thriller</a>
-                                    <a href="#">Tokusatsu</a>
-                                    <a href="#">Vampire</a>
-                                    <a href="#">Yaoi</a>
-                                    <a href="">Yuri</a>
-                                </div>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#"><span class="nav-text-color">Season</span></a>
-                                <div class="dropdown-content">
-                                    <a href="#">Mùa Đông 2020</a>
-                                    <a href="#">Mùa Xuân 2020</a>
-                                    <a href="#">Mùa Hạ 2020</a>
-                                    <a href="#">Mùa Thu 2020</a>
-                                    <a href="#">Mùa Đông 2019</a>
-                                    <a href="#">Mùa Xuân 2019</a>
-                                    <a href="#">Mùa Hạ 2019</a>
-                                    <a href="#">Mùa Thu 2019</a>
-                                    <a href="#">Mùa Đông 2018</a>
-                                    <a href="#">Mùa Xuân 2018</a>
-                                    <a href="#">Mùa Hạ 2018</a>
-                                    <a href="#">Mùa Thu 2018</a>
-                                </div>
-                            </li>
-                            <a class="nav-link" href="#"><span class="nav-text-color">Thư viện</span> </a>
-                            <a class="nav-link" href="#"><span class="nav-text-color">Lịch chiếu</span> </a>
-                        </li>
-                </ul>
-                <form class="form-inline my-2 my-lg-0 px-5">
-                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><span class="nav-text-color">Tìm kiếm</span></button>
-                </form>
-                <button class="btn btn-danger my-2 my-sm-0" type="button" onclick="login()"><span class="nav-text-color">Đăng nhập</span></button>
-            </div>
+                        </form>
+                    </div>
+                </li>
+                <li class="child">
+                    <div id="btn-login">
+                        <input type="button" class="btn btn-danger btn-size" onclick="login()" value="Đăng nhập">
+                    </div>
+                </li>
+            </ul>
         </nav>
-        <!-- End Navigation -->
+        <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="search-container-responsive" id="search">
+            <form action="#" class="form">
+                <div class="form-group">
+                    <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+        </div>
     </header>
     <!-- End Header -->
 
     <!-- Content -->
     <div class="container">
         <!-- Top Anime -->
-        <div class="container-xl mt-3 scroll-horizontal">
+        <div class="scroll-horizontal">
             <a class="item-anime-link" href="#" title="Ông chồng nội trợ (2020)">
                 <div class="item-anime">
                     <img class="item-anime-image" src="./images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
@@ -332,7 +341,7 @@
                                                             <i class="fas fa-user-circle" alt="Nhân vật Yuzaki Nasa" title="Nhân vật Yuzaki Nasa"></i>
                                                             <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
                                                     </div>
-                                                    <button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Phim</button>
+                                                    <button type="button" class="btn btn-danger btn-banner"> <i class="fas fa-play"></i> Xem Phim</button>
                                                 </div>
                                             </div>
                                         </div>
@@ -405,7 +414,6 @@
 
                     <!-- Content -->
                     <section class="section-col-70">
-
                         <!-- New anime -->
                         <div class="list-anime">
                             <div class="list-anime-header">
@@ -730,7 +738,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Kaifuku Jutsushi no Yarinaoshi</h6>
                                             <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2021</i> </p>
                                             <p>Keare là một thường dân sống ở một ngôi làng bình dị, cho đến khi nhận được sức mạnh hồi phục và trở thành</p>
@@ -771,7 +779,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Tsukiuta. The Animation 2</h6>
                                             <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/13</i> <i class="far fa-calendar-plus "> 2020</i> </p>
                                             <p>Mùa 2 củaTsukiuta. The Animation.</p>
@@ -813,7 +821,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Guraburu!</h6>
                                             <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2020</i> </p>
                                             <p>Chuyển thể anime của Guraburu !, là manga 4-koma của Granblue Fantasy.</p>
@@ -854,7 +862,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Kaeru no Pickles: Kimochi no Iro</h6>
                                             <p><i class="fas fa-star "> 5</i> <i class="far fa-clock "> ??/12</i> <i class="far fa-calendar-plus "> 2020</i> </p>
                                             <p></p>
@@ -895,7 +903,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Shingeki no Kyojin: The Final Season</h6>
                                             <p><i class="fas fa-star "> 8.5</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2020</i> </p>
                                             <p>Phần cuối của Shingeki no Kyojin.</p>
@@ -937,7 +945,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Rebirth</h6>
                                             <p><i class="fas fa-star "> 10</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2020</i> </p>
                                             <p>Loạt phim xoay quanh một đội gồm 12 học sinh trung học thích chơi trò chơi giao dịch thẻ bài Rebirth For You</p>
@@ -979,7 +987,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Gintama: The Final</h6>
                                             <p><i class="fas fa-star "> 5</i> <i class="far fa-clock "> Sắp chiếu</i> <i class="far fa-calendar-plus "> 2021</i> </p>
                                             <p>Movie mới của Gintama.</p>
@@ -1023,7 +1031,7 @@
                                         </div>
                                     </a>
                                     <div class="item-content-sub-detail ">
-                                        <div class="px-2 ">
+                                        <div class="px-2">
                                             <h6>Onihei</h6>
                                             <p><i class="fas fa-star "> 5</i> <i class="far fa-clock "> ??/??</i> <i class="far fa-calendar-plus "> 2017</i> </p>
                                             <p>Series tiểu thuyết lịch sử theo bước chân của Heizō Hasegawa - người mang công lý để trừng phạt bọn tội phạm</p>
@@ -1376,98 +1384,98 @@
                 <div class="col-30 ">
                     <!-- Content -->
                     <section>
-                        <div class="content ">
-                            <div class="px-2 ">
+                        <div class="content">
+                            <div class="px-2">
                                 <h4>Hôm nay xem gì ?</h4>
                                 <hr>
                                 <p>Nếu bạn buồn phiền không biết xem gì hãy để chúng tôi lựa chọn cho bạn</p>
-                                <a href="# "><button type="button " class="btn btn-danger "> <i class="fas fa-play "></i> Xem Anime <b>Ngẫu nhiên</b></button></a>
+                                <a href="#"><button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Anime <b>Ngẫu nhiên</b></button></a>
                             </div>
                         </div>
                     </section>
 
                     <section>
-                        <div class="content ">
-                            <div class="px-2 ">
+                        <div class="content">
+                            <div class="px-2">
                                 <h4>Anime mới cập nhật</h4>
                                 <hr>
-                                <div class="list-anime-update ">
+                                <div class="list-anime-update">
                                     <ul>
                                         <li>
                                             <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Golden Kamuy 3rd Season</span>
-                                                    <span class="list-anime-ep ">Tập 07</span>
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right "></i>Golden Kamuy 3rd Season</span>
+                                                    <span class="list-anime-ep">Tập 07</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Noblesse</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Noblesse</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</span>
                                                     <span class="list-anime-ep ">Tập 08</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Kimi to Boku no Saigo no Senjou, Aruiwa Sekai ga Hajimaru Seisen</span>
-                                                    <span class="list-anime-ep ">Tập 08</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Kuma Kuma Kuma Bear</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Kuma Kuma Kuma Bear</span>
-                                                    <span class="list-anime-ep ">Tập 08</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Black Clover (TV)</span>
+                                                    <span class="list-anime-ep">Tập 153</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Black Clover (TV)</span>
-                                                    <span class="list-anime-ep ">Tập 153</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Maoujou de Oyasumi</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Maoujou de Oyasumi</span>
-                                                    <span class="list-anime-ep ">Tập 08</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Ikebukuro West Gate Park</span>
+                                                    <span class="list-anime-ep">Tập 08</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Ikebukuro West Gate Park</span>
-                                                    <span class="list-anime-ep ">Tập 08</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Magatsu Wahrheit: Zuerst</span>
+                                                    <span class="list-anime-ep">Tập 07</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Magatsu Wahrheit: Zuerst</span>
-                                                    <span class="list-anime-ep ">Tập 07</span>
+                                            <a href="#">
+                                                <div class="list-anime-info">
+                                                    <span class="list-anime-name"><i class="fas fa-angle-right"></i>Kamen Rider Saber</span>
+                                                    <span class="list-anime-ep">Tập 11</span>
                                                 </div>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="# ">
-                                                <div class="list-anime-info ">
-                                                    <span class="list-anime-name "><i class="fas fa-angle-right "></i>Kamen Rider Saber</span>
-                                                    <span class="list-anime-ep ">Tập 11</span>
-                                                </div>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="# ">
-                                                <span><i class="fas fa-angle-right "></i>Xem thêm...</span>
+                                            <a href="#">
+                                                <span><i class="fas fa-angle-right"></i>Xem thêm...</span>
                                             </a>
                                         </li>
                                     </ul>
@@ -1493,7 +1501,7 @@
     <!-- End Footer -->
 </body>
 <script src="./js/scroll.js "></script>
-
+<script src="./js/nav.js"></script>
 <script>
     //Move banner
     $('.slide-banner').jdSlider();
