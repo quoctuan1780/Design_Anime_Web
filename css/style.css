@@ -81,6 +81,7 @@ body {
     font-family: alata, sans-serif;
     margin: 0;
     padding: 0;
+    min-width: 450px;
 }
 
 .px-2 {
@@ -106,7 +107,8 @@ body {
 }
 
 .col-30 {
-    width: 30%;
+    width: 28%;
+    margin-left: 2%;
 }
 
 
@@ -960,6 +962,100 @@ section {
     color: #FFF;
 }
 
+.item {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 5px;
+    padding-bottom: 20px;
+}
+
+.item-name-anime a {
+    font-size: 12px;
+    line-height: 20px;
+    transition: .4s;
+    max-height: 40px;
+    overflow: hidden;
+    font-weight: 200;
+    font-family: alata, sans-serif;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.item-name-anime a:hover {
+    color: #78909c;
+}
+
+.item div a img {
+    width: 55px;
+    height: 85px;
+    flex-grow: 1;
+    border-radius: 5px;
+}
+
+.item-img {
+    position: relative;
+}
+
+.ribbon {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.ribbon span {
+    border: 1px solid #b5e745;
+    color: black;
+    border-top-right-radius: 5px;
+    background-color: #b5e745;
+}
+
+.mix-color-small {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 95%;
+    background-color: rgba(81, 77, 77, 0.2);
+    display: none;
+    border-radius: 5px;
+}
+
+.play-small {
+    position: absolute;
+    top: 35%;
+    left: 40%;
+    display: none;
+}
+
+.item-img:hover .play-small {
+    display: block;
+    cursor: pointer;
+    animation: fade-in 0.5s ease-in;
+}
+
+.item-img:hover .mix-color-small {
+    display: block;
+    cursor: pointer;
+    animation: fade-in 0.2s ease-in;
+}
+
+.item-decription {
+    padding-left: 10px;
+    flex-grow: 2;
+}
+
+.item-anime-info p i {
+    display: inline-block;
+    font-size: 12px;
+    padding: 0px 5px;
+}
+
+.item-anime-info p span {
+    color: #FFF;
+    font-size: 12px;
+}
+
 
 /* End content */
 
@@ -967,7 +1063,112 @@ section {
 /* End section */
 
 
+/* Footer */
+
+.footer-heder ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.footer-heder ul li img {
+    width: 110px;
+    height: 40px;
+}
+
+.child:nth-child(2) {
+    flex-grow: 2;
+    font-size: 16px;
+}
+
+.child:nth-child(2) ul li a:hover {
+    color: #78909c;
+    transition: 0.5s;
+}
+
+.child:nth-child(3) ul li a {
+    font-size: 20px;
+    padding: 10px;
+    margin: 0px 10px;
+    background-color: #2632389c;
+    border-radius: 5px;
+}
+
+.fa-facebook-f {
+    padding: 0px 5px;
+}
+
+.fa-instagram {
+    padding: 0px 2px;
+}
+
+.fa-twitter {
+    padding: 0px 2px;
+}
+
+.footer-heder ul li a {
+    text-decoration: none;
+    padding: 0px 10px;
+    color: #FFF;
+}
+
+.child:nth-child(3) ul li a:hover {
+    background-color: #263238;
+    transition: 0.2s;
+}
+
+.footer-content {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 0px;
+    /* background-color: #263238; */
+    text-align: center;
+}
+
+.footer-content p {
+    color: #FFF;
+    font-weight: bold;
+}
+
+.footer-content p span {
+    padding: 0px 10px;
+    color: #FFF;
+}
+
+.footer-content a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.footer-content a:hover {
+    color: #78909c;
+}
+
+
+/* End footer */
+
+
 /* Responsive */
+
+@media (min-width: 1200px) and (max-width: 1350px) {
+    .banner-image button {
+        margin-left: 1%;
+    }
+    .banner-image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .content .px-2 a button {
+        margin-left: 1%;
+    }
+    .item-name-anime a {
+        font-size: 12px;
+    }
+}
 
 
 /* 
@@ -1008,6 +1209,9 @@ section {
     .item-anime-content-play {
         left: 30%;
         top: 35%;
+    }
+    .banner-image button {
+        margin-left: 1%;
     }
 }
 
@@ -1061,6 +1265,9 @@ section {
         position: absolute;
         left: 15%;
         top: 40%;
+    }
+    .banner-image button {
+        margin-left: 1%;
     }
     /*Anime comming soon*/
     .item-anime-content-time {
@@ -1291,6 +1498,27 @@ section {
     }
 }
 
+@media (max-width: 1100px) {
+    .footer-heder ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .child:nth-child(2) ul {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 1rem;
+    }
+    .child:nth-child(2) ul li {
+        margin: 5px;
+    }
+    .child:nth-child(3) ul {
+        display: flex;
+        flex-direction: row;
+        padding-top: 1rem;
+    }
+}
+
 @media (min-width: 990px) and (max-width: 1025px) {
     .banner-image {
         margin-left: auto;
@@ -1298,7 +1526,7 @@ section {
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1325px) {
     .col-70 {
         width: 100%;
     }
