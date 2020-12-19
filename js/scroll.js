@@ -13,11 +13,18 @@ slider.addEventListener('mouseleave', () => {
 });
 
 slider.addEventListener('mouseup', () => {
+    for (let i = 0; i < document.getElementsByClassName('item-anime-link').length; i++) {
+        document.getElementsByClassName('item-anime-link')[i].className = document.getElementsByClassName('item-anime-link')[i].className.replace(" remove-point-event", "");
+    }
     isDown = false;
 });
 
 slider.addEventListener('mousemove', (e) => {
     if (!isDown) return;
+    for (let i = 0; i < document.getElementsByClassName('item-anime-link').length; i++) {
+        if (document.getElementsByClassName('item-anime-link')[i].className.search(' remove-point-event') === -1)
+            document.getElementsByClassName('item-anime-link')[i].className += ' remove-point-event';
+    }
     e.preventDefault();
     const x = e.pageX - slider.offsetLeft,
         walk = (x - startX);
