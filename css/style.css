@@ -3,6 +3,10 @@
     height: 10px;
 }
 
+.remove-point-event {
+    pointer-events: none;
+}
+
 
 /* Track */
 
@@ -410,7 +414,7 @@ body {
 }
 
 .px-2 {
-    padding: 5px;
+    padding: 5px 5px 5px 15px;
 }
 
 .container {
