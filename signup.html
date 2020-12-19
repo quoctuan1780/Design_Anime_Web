@@ -136,8 +136,9 @@
                 </li>
                 <li class="child">
                     <div>
-                        <a href="signup.html">Đăng ký</a>
+                        <input type="button" class="btn btn-danger btn-size" onclick="sign_up()" value="Đăng ký">
                     </div>
+                    
                 </li>
             </ul>
         </nav>
@@ -1505,6 +1506,9 @@
                 button: "OK!",
             });
         }
+    }
+    function sign_up(){
+        window.location.replace("signup.html");
     }
 </script>
 
