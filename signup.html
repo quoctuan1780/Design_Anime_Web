@@ -4,24 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anime</title>
+    <title>Sign Up</title>
     <script src="https://kit.fontawesome.com/4c9eabfb23.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
     <script src="./js/jquery.js"></script>
     <script src="./js/jquery.jdSlider-latest.min.js"></script>
     <script src="./js/timer.js "></script>
     <script src="./js/active.js"></script>
-
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
+    <link rel="stylesheet" href="./css/signin_signup.css" type="text/css">
 </head>
 
 <body>
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="#">
-                <img src="./images/logoz.png" alt="Logo">
+            <a href="index.html">
+                <img src="http://cdn.animevietsub.tv/data/logo/logoz.png" alt="Logo">
             </a>
         </div>
         <nav>
@@ -119,41 +122,10 @@
                     <div class="search-container" id="search">
                         <form action="#">
                             <div class="form-group">
-                                <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" name="search" id="search1" autocomplete="off">
+                                <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
-                    </div>
-                    <div class="result-search display-none" id="result-search-1">
-                        <div class="flex-row">
-                            <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                            <div class="flex-column">
-                                <span onclick="window.location='#'" class="name">Tonikaku Kawaii</span>
-                                <span>Tập 11 Vietsub</span>
-                            </div>
-                        </div>
-                        <div class="flex-row">
-                            <img src="./images/animevsub-a23W5RkzqX.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                            <div class="flex-column">
-                                <span onclick="window.location='#'" class="name">Haikyuu!!: To the Top 2nd Season</span>
-                                <span>Full Vietsub</span>
-                            </div>
-                        </div>
-                        <div class="flex-row">
-                            <img src="./images/animevsub-ntec5urQH2.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                            <div class="flex-column">
-                                <span onclick="window.location='#'" class="name">Kamisama ni Natta Hi</span>
-                                <span>Tập 10 Vietsub</span>
-                            </div>
-                        </div>
-                        <div class="flex-row">
-                            <img src="./images/animevsub-UsmSNURxEV.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                            <div class="flex-column">
-                                <span onclick="window.location='#'" class="name">Mahouka Koukou no Rettousei: Raihousha-hen</span>
-                                <span>Tập 11 Vietsub</span>
-                            </div>
-                        </div>
-                        <input type="button" value="Enter để tìm kiếm" class="btn btn-danger btn-search">
                     </div>
                 </li>
                 <li class="child">
@@ -176,41 +148,10 @@
         <div class="search-container-responsive" id="search">
             <form action="#">
                 <div class="form-group">
-                    <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" id="search2" name="search" autocomplete="off">
+                    <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </form>
-            <div class="result-search display-none" id="result-search-2">
-                <div class="flex-row">
-                    <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                    <div class="flex-column">
-                        <span onclick="window.location='#'" class="name">Tonikaku Kawaii</span>
-                        <span>Tập 11 Vietsub</span>
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <img src="./images/animevsub-a23W5RkzqX.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                    <div class="flex-column">
-                        <span onclick="window.location='#'" class="name">Haikyuu!!: To the Top 2nd Season</span>
-                        <span>Full Vietsub</span>
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <img src="./images/animevsub-ntec5urQH2.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                    <div class="flex-column">
-                        <span onclick="window.location='#'" class="name">Kamisama ni Natta Hi</span>
-                        <span>Tập 10 Vietsub</span>
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <img src="./images/animevsub-UsmSNURxEV.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
-                    <div class="flex-column">
-                        <span onclick="window.location='#'" class="name">Mahouka Koukou no Rettousei: Raihousha-hen</span>
-                        <span>Tập 11 Vietsub</span>
-                    </div>
-                </div>
-                <input type="button" value="Enter để tìm kiếm" class="btn btn-danger">
-            </div>
         </div>
     </header>
     <!-- End Header -->
@@ -380,106 +321,38 @@
         <div class="container-xl">
             <div class="flex-container">
                 <div class="col-70">
-                    <!-- Banner -->
-                    <div class="banner">
-                        <section class="jd-slider slide-banner">
-                            <div class="slide-inner">
-                                <ul class="slide-area">
-                                    <li>
-                                        <div class="banner-item">
-                                            <div class="banner-image">
-                                                <img src="./images/banner/animevsub-wfw1X0aETl.jpg" alt="Background">
-                                                <div class="mix-color"></div>
-                                                <div class="banner-content">
-                                                    <a href="#">
-                                                        <div>Tonikaku Kawaii</div>
-                                                    </a>
-                                                    <p class="banner-info"> <i class="fas fa-star" style="color: #b5e745;"> 28</i> <i class="far fa-clock text-white"> 08/??</i> <i class="far fa-calendar-plus text-white"> 2020</i> <span class="hd">HD</span></p>
-                                                    <div class="banner-decription">
-                                                        <p class="decription crop">Lớn lên bị chế giễu vì cái tên kỳ lạ của mình, Nasa Yuzaki cố gắng để được mọi người nhớ đến vì điều...</p>
-                                                        <p><i class="fas fa-video"></i><span> Studio:</span> Seven Arcs</p>
-                                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>, <a href="#" title="Romance">Romance</a>,
-                                                            <a href="#" title="Comedy">Comedy</a>, <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
-                                                    </div>
-                                                    <div class="banner-cast">
-                                                        <p><i class="fas fa-user-circle" alt="Nhân vật Yuzaki Nasa" title="Nhân vật Yuzaki Nasa"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Arisugawa Kaname" title="Nhân vật Arisugawa Kaname"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Arisugawa Aya" title="Nhân vật Arisugawa Aya"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Kaginoji Chitose" title="Nhân vật Kaginoji Chitose"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Yuzaki Tsukasa" title="Nhân vật Yuzaki Tsukasa"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Yuzaki Nasa" title="Nhân vật Yuzaki Nasa"></i>
-                                                            <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
-                                                    </div>
-                                                    <button type="button" class="btn btn-danger btn-banner"> <i class="fas fa-play"></i> Xem Phim</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="banner-item">
-                                            <div class="banner-image">
-                                                <img src="./images/banner/animevsub-4MTnpipveJ.jpg" alt="Background">
-                                                <div class="mix-color"></div>
-                                                <div class="banner-content">
-                                                    <a href="#">
-                                                        <div>Kamisama ni Natta Hi</div>
-                                                    </a>
-                                                    <p class="banner-info"> <i class="fas fa-star" style="color: #b5e745;"> 12</i> <i class="far fa-clock text-white"> 07/??</i> <i class="far fa-calendar-plus text-white"> 2020</i> <span class="hd">HD</span></p>
-                                                    <div class="banner-decription">
-                                                        <p class="decription crop">Vào cuối kỳ nghỉ hè cuối cùng của trường trung học, Youta Narukami dành cả ngày để chuẩn bị cho kỳ thi tuyển...</p>
-                                                        <p><i class="fas fa-video"></i><span> Studio:</span> P.A. Works</p>
-                                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Fantasy">Fantasy</a>, <a href="#" title="Drama">Drama</a>,
-                                                            <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
-                                                    </div>
-                                                    <div class="banner-cast">
-                                                        <p><i class="fas fa-user-circle" alt="Nhân vật Hina" title="Nhân vật Hina"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Narukami Sora" title="Nhân vật Narukami Sora"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Narukami Youta" title="Nhân vật Narukami Youta"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Kaginoji Chitose" title="Nhân vật Kaginoji Chitose"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Izanami Kyouko" title="Nhân vật Izanami Kyouko"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Tengan Kako" title="Nhân vật Tengan Kako"></i>
-                                                            <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
-                                                    </div>
-                                                    <button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Phim</button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="banner-item">
-                                            <div class="banner-image">
-                                                <img src="./images/banner/animevsub-wILDhjmsnI.jpg" alt="Background">
-                                                <div class="mix-color"></div>
-                                                <div class="banner-content">
-                                                    <a href="#">
-                                                        <div>Majo no Tabitabi</div>
-                                                    </a>
-                                                    <p class="banner-info"> <i class="fas fa-star" style="color: #b5e745;"> 18</i> <i class="far fa-clock text-white"> 08/??</i> <i class="far fa-calendar-plus text-white"> 2020</i> <span class="hd">HD</span></p>
-                                                    <div class="banner-decription">
-                                                        <p class="decription crop">Ngày xửa ngày xưa, có một phù thủy tên là Elaina, bắt đầu một cuộc hành trình xuyên thế giới. Trên đường đi,...</p>
-                                                        <p><i class="fas fa-video"></i><span> Studio:</span> C2C</p>
-                                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Fantasy">Fantasy</a>, <a href="#" title="Adventure">Adventure</a><a href="#">,<i class="fas fa-ellipsis-h border-circle"></i></a></p>
-                                                    </div>
-                                                    <div class="banner-cast">
-                                                        <p><i class="fas fa-user-circle" alt="Nhân vật Elaina" title="Nhân vật Elaina"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Sheila" title="Nhân vật Sheila"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Saya" title="Nhân vật Saya"></i>
-                                                            <i class="fas fa-user-circle" alt="Nhân vật Flan" title="Nhân vật Flan"></i>
-                                                            <a href="#"><i class="fas fa-ellipsis-h border-circle"></i></a></p>
-                                                    </div>
-                                                    <a href="#"><button type="button" class="btn btn-danger"> <i class="fas fa-play"></i> Xem Phim</button></a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="controller">
-                                <div class="indicate-area"></div>
-                            </div>
-                        </section>
-                    </div>
-                    <!-- End Banner -->
+                    <!-- Form sign up -->
+                    <form align="center" class="form" id="formsignup">
+
+                        <h1 class="login-title">ĐĂNG KÝ</h1>
+                        <br>
+                        <input type="button" id="fb-button" value="Đăng nhập bằng Facebook">
+                        <br>
+                        <br>
+                        <div class="form-login">
+                            <input type="text" class="form-control" id="taikhoan" name="taikhoan"
+                                placeholder="Tài khoản" required />
+                            <label class="form-control-label" for="taikhoan"><i class='fas fa-user-alt'></i></label>
+                        </div>
+                        <div class="form-login">
+                            <input type="password" class="form-control" id="matkhau1" name="matkhau1"
+                                placeholder="Mật khẩu" required />
+                            <label class="form-control-label" for="matkhau1"><i class="fa fa-lock"></i></label>
+                        </div>
+                        <div class="form-login">
+                            <input type="password" class="form-control" id="matkhau2" name="matkhau2"
+                                placeholder="Nhập lại mật khẩu" required />
+                            <label class="form-control-label" for="matkhau2"><i class="fa fa-lock"></i></label>
+                        </div>
+                        <div class="form-login">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                required />
+                            <label class="form-control-label" for="email"><i class="fa fa-envelope"></i></label>
+                        </div>
+                        <button type="button" id="login-button-dangky" onclick="Signup()">ĐĂNG KÝ</button>
+
+                    </form>
+                    <!-- End Form sign up -->
 
                     <!-- Content -->
                     <section class="section-col-70">
@@ -500,7 +373,7 @@
                         </div>
                         <div class="flex-content">
                             <div class="item-anime-absol">
-                                <a class="item-anime-link" href="./detail.html" title="Golden Kamuy 3rd Season (2020)">
+                                <a class="item-anime-link" href="#" title="Golden Kamuy 3rd Season (2020)">
                                     <div class="item-anime-content">
                                         <img src="./images/new_anime/animevsub-v5d9152tbV.jpg" alt="Golden Kamuy 3rd Season (2020)">
                                         <div class="item-anime-content-absol">
@@ -1555,82 +1428,7 @@
                     </section>
 
                     <section>
-                        <div class="content">
-                            <div class="flex-content content-rank">
-                                <a href="#">Hot tuần</a>
-                                <a href="#">Movie/OVA</a>
-                                <a href="#">TV/Series</a>
-                            </div>
-                            <hr>
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="#"><img src="./images/Anime_Hot/animevsub-R1YJC0jC7A.jpg" alt="Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai - The Young Pig-Rascal Isn't Dreaming of a Dreaming Girl, Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai"></a>
-                                    <div class="mix-color-small"></div>
-                                    <div class="ribbon">
-                                        <span>#1</span>
-                                    </div>
-                                    <div class="play-small"><i class="fas fa-play"></i></div>
-                                </div>
-                                <div class="item-decription">
-                                    <div class="item-name-anime"><a href="#">Seishun Buta Yarou wa Yumemiru Shoujo no Yume wo Minai</a></div>
-                                    <div class="item-anime-info">
-                                        <p><i class="fas fa-star" style="color: #b5e745;"> 28</i> <i class="far fa-clock text-white"> 01/01</i> <i class="far fa-calendar-plus text-white"> 2019</i> <span class="hd">HD</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="#"><img src="./images/Anime_Hot/animevsub-mjpa6qL6fI.jpg" alt="Kuroko no Basket: Last Game - Gekijouban Kuroko no Basuke: Last Game"></a>
-                                    <div class="mix-color-small"></div>
-                                    <div class="ribbon">
-                                        <span>#2</span>
-                                    </div>
-                                    <div class="play-small"><i class="fas fa-play"></i></div>
-                                </div>
-                                <div class="item-decription">
-                                    <div class="item-name-anime"><a href="#">Kuroko no Basket: Last Game</a></div>
-                                    <div class="item-anime-info">
-                                        <p><i class="fas fa-star" style="color: #b5e745;"> 9</i> <i class="far fa-clock text-white"> 90 Phút</i> <i class="far fa-calendar-plus text-white"> 2017</i> <span class="hd">HD</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="#"><img src="./images/Anime_Hot/animevsub-y0I9faHEQo.jpg" alt="Kono Subarashii Sekai ni Shukufuku wo!: Kurenai Densetsu - KonoSuba Movie, Eiga Kono Subarashii Sekai ni Shukufuku wo!, Kono Subarashii Sekai ni Shukufuku wo! Movie"></a>
-                                    <div class="mix-color-small"></div>
-                                    <div class="ribbon">
-                                        <span>#3</span>
-                                    </div>
-                                    <div class="play-small"><i class="fas fa-play"></i></div>
-                                </div>
-                                <div class="item-decription">
-                                    <div class="item-name-anime">
-                                        <a href="#">Kono Subarashii Sekai ni Shukufuku wo!: Kurenai Densetsu</a>
-                                    </div>
-                                    <div class="item-anime-info">
-                                        <p><i class="fas fa-star" style="color: #b5e745;"> 9.7</i> <i class="far fa-clock text-white"> 01/01</i> <i class="far fa-calendar-plus text-white"> 2019</i> <span class="hd">HD</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="item-img">
-                                    <a href="#"><img src="./images/Anime_Hot/animevsub-3D53m9IkJM.jpg" alt="Hello World - "></a>
-                                    <div class="mix-color-small"></div>
-                                    <div class="ribbon">
-                                        <span>#4</span>
-                                    </div>
-                                    <div class="play-small"><i class="fas fa-play"></i></div>
-                                </div>
-                                <div class="item-decription">
-                                    <div class="item-name-anime">
-                                        <a href="#">Hello World</a>
-                                    </div>
-                                    <div class="item-anime-info">
-                                        <p><i class="fas fa-star" style="color: #b5e745;"> 10</i> <i class="far fa-clock text-white"> 1 giờ 37</i> <i class="far fa-calendar-plus text-white"> 2019</i> <span class="hd">HD</span></p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </section>
                     <!-- End Content -->
                 </div>
@@ -1639,45 +1437,13 @@
     </div>
     <!-- End Body -->
     <!-- Footer -->
-    <footer class="container" style="margin-top: 2rem;">
-        <div class="footer-heder">
-            <ul>
-                <li class="child">
-                    <a href="#"><img src="./images/logoz.png" alt="logo"></a>
-                </li>
-                <li class="child">
-                    <ul>
-                        <li><a href="#">Xem phim</a></li>
-                        <li><a href="#">Yêu cầu anime</a></li>
-                        <li><a href="#">Liên hệ</a></li>
-                    </ul>
-                </li>
-                <li class="child">
-                    <ul>
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-twitter"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fab fa-youtube"></i></a>
-                        </li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <div class="footer-content">
-            <p>Developer: <span>Q.Tuấn</span><span>T.Thanh</span></p>
-            <a href="#">&copy; Copyright 2020 Anime</a>
-        </div>
-    </footer>
+    <div class=" footer ">
+
+    </div>
     <!-- End Footer -->
 </body>
 <script src="./js/scroll.js "></script>
 <script src="./js/nav.js"></script>
-<script src="./js/search.js"></script>
 <script>
     //Move banner
     $('.slide-banner').jdSlider();
@@ -1703,6 +1469,43 @@
         }).then((result) => {
             Swal.fire(`Login: ${result.value.login} Password: ${result.value.password}`.trim())
         })
+    }
+    function Signup() {
+        var user = document.getElementById("taikhoan").value;
+        var pass1 = document.getElementById("matkhau1").value;
+        var pass2 = document.getElementById("matkhau2").value;
+        var email = document.getElementById("email").value;
+        if (user && pass1 && pass2 && email) {
+            if (pass1 !== pass2) {
+                Swal.fire({
+                    text: "Vui lòng nhập mật khẩu trùng nhau!",
+                    icon: "warning",
+                    button: "OK!",
+                });
+            } else {
+                if (email.includes("@gmail.com") || email.includes("@outlook.com") || email.includes("@yahoo.com")) {
+                    Swal.fire({
+                        text: "Bạn đã đăng ký thành công!",
+                        icon: "success",
+                        button: "OK!",
+                    });
+                    window.location.replace("signedin.html")
+                } else {
+                    Swal.fire({
+                        text: "Vui lòng nhập email đúng định dạng!",
+                        icon: "warning",
+                        button: "OK!",
+                    });
+                }
+            }
+        } else {
+
+            Swal.fire({
+                text: "Vui lòng nhập đầy đủ thông tin!",
+                icon: "warning",
+                button: "OK!",
+            });
+        }
     }
     function sign_up(){
         window.location.replace("signup.html");
