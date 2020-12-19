@@ -543,7 +543,6 @@ input[type=text] {
 
 .btn-size {
     margin-top: 7px;
-    margin-right: 10px;
 }
 
 
@@ -1539,39 +1538,6 @@ section {
 }
 
 
-@media (min-width: 1281px) {
-    .item-anime-absol:hover .item-content-sub-detail {
-        opacity: 1;
-        transition: 0.5s;
-    }
-    section {
-        padding-top: 2rem;
-    }
-    .item-anime-content {
-        margin-top: 5rem;
-    }
-    .item-anime-content {
-        width: 200px;
-        height: 260px;
-    }
-    .item-anime-content img {
-        width: 200px;
-        height: 260px;
-    }
-    .show-more-anime {
-        margin-top: 5rem;
-    }
-    .item-anime-conten-date {
-        position: absolute;
-        left: 10%;
-        top: 40%;
-    }
-    .item-anime-content-time {
-        bottom: -8%;
-    }
-}
-
-
 /* 
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
@@ -1886,6 +1852,12 @@ section {
     }
 }
 
+@media (min-width: 1281px) {
+    .item-anime-absol:hover .item-content-sub-detail {
+        opacity: 1;
+        transition: 0.5s;
+    }
+}
 
 @media (min-width: 1200px) {
     .section-col-70 {
