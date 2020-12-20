@@ -625,6 +625,13 @@ body {
 
 /* Search + btn */
 
+.img-circle {
+    padding: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
 .result-search {
     position: absolute;
     background-color: #263238;
@@ -790,6 +797,20 @@ header nav ul li.sub-menu:before {
     height: auto;
     overflow-y: hidden;
     z-index: 1;
+}
+
+header nav ul li.sub-menu-user:before {
+    content: '\f0d7';
+    font-family: fontAwesome;
+    position: absolute;
+    line-height: 50px;
+    color: #FFF;
+    right: 5px;
+    cursor: pointer;
+}
+
+.sub-menu-user {
+    width: 240px !important;
 }
 
 .sub-menu ul li {
@@ -2191,6 +2212,10 @@ section {
     }
     header nav ul li ul li a:hover {
         color: #C1C1C1;
+    }
+    .sub-menu-user {
+        width: 100% !important;
+        overflow-y: scroll;
     }
     .sub-menu ul {
         max-width: unset;

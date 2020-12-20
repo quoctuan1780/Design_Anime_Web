@@ -23,10 +23,13 @@ function login() {
         if (result.isDenied) {
             window.location.href = './signup.html';
         }
-        Swal.fire(`
-                Login: ${result.value.login}
-                Password: ${result.value.password}
-            `.trim())
+        // Swal.fire(`
+        //         Login: ${result.value.login}
+        //         Password: ${result.value.password}
+        //     `.trim())
+        if (result.isConfirmed) {
+            window.location.href = './signedin.html';
+        }
     })
 }
 
