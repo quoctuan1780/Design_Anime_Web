@@ -117,12 +117,43 @@
                 <li><a href="#">Lịch chiếu</a></li>
                 <li class="child">
                     <div class="search-container" id="search">
-                        <form action="#" class="form">
+                        <form action="./search.html">
                             <div class="form-group">
-                                <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                                <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" name="search" id="search1" autocomplete="off">
                                 <button type="submit"><i class="fa fa-search"></i></button>
                             </div>
                         </form>
+                    </div>
+                    <div class="result-search display-none" id="result-search-1">
+                        <div class="flex-row">
+                            <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Tonikaku Kawaii</span>
+                                <span>Tập 11 Vietsub</span>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <img src="./images/animevsub-a23W5RkzqX.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Haikyuu!!: To the Top 2nd Season</span>
+                                <span>Full Vietsub</span>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <img src="./images/animevsub-ntec5urQH2.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Kamisama ni Natta Hi</span>
+                                <span>Tập 10 Vietsub</span>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <img src="./images/animevsub-UsmSNURxEV.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                                <span>Tập 11 Vietsub</span>
+                            </div>
+                        </div>
+                        <input type="button" value="Enter để tìm kiếm" class="btn btn-danger btn-search">
                     </div>
                 </li>
                 <li class="child">
@@ -137,12 +168,43 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div class="search-container-responsive" id="search">
-            <form action="#" class="form">
+            <form action="./search.html">
                 <div class="form-group">
-                    <input type="text" placeholder="Tìm tên tiếng việt, Anh hoặc Nhật" name="search">
+                    <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" id="search2" name="search" autocomplete="off">
                     <button type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </form>
+            <div class="result-search display-none" id="result-search-2">
+                <div class="flex-row">
+                    <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Tonikaku Kawaii</span>
+                        <span>Tập 11 Vietsub</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <img src="./images/animevsub-a23W5RkzqX.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Haikyuu!!: To the Top 2nd Season</span>
+                        <span>Full Vietsub</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <img src="./images/animevsub-ntec5urQH2.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Kamisama ni Natta Hi</span>
+                        <span>Tập 10 Vietsub</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <img src="./images/animevsub-UsmSNURxEV.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                        <span>Tập 11 Vietsub</span>
+                    </div>
+                </div>
+                <input type="button" value="Enter để tìm kiếm" class="btn btn-danger">
+            </div>
         </div>
     </header>
     <!-- End Header -->
@@ -1602,6 +1664,8 @@
 </body>
 <script src="./js/scroll.js "></script>
 <script src="./js/nav.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/search.js"></script>
 <script>
     //Move banner
     $('.slide-banner').jdSlider();
