@@ -13,7 +13,7 @@
     <script src="./js/active.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-    
+
     <link rel="stylesheet" href="./css/style.css" type="text/css">
     <link rel="stylesheet" href="./css/common.css" type="text/css">
     <link rel="stylesheet" href="./css/signin_signup.css" type="text/css">
@@ -30,7 +30,7 @@
         <nav>
             <div class="mix-color-nav"></div>
             <ul>
-                <li><a href="#">Trang chủ</a></li>
+                <li><a href="./index.html">Trang chủ</a></li>
 
                 <li class="sub-menu"><a href="#">Dạng anime</a>
                     <ul>
@@ -132,13 +132,7 @@
                     <div id="btn-login">
                         <input type="button" class="btn btn-danger btn-size" onclick="login()" value="Đăng nhập">
                     </div>
-                    
-                </li>
-                <li class="child">
-                    <div>
-                        <input type="button" class="btn btn-danger btn-size" onclick="sign_up()" value="Đăng ký">
-                    </div>
-                    
+
                 </li>
             </ul>
         </nav>
@@ -160,7 +154,7 @@
     <div class="container">
         <!-- Top Anime -->
         <div class="scroll-horizontal">
-            <a class="item-anime-link" href="#" title="Ông chồng nội trợ (2020)">
+            <a class="item-anime-link" href="./detail.html" title="Ông chồng nội trợ (2020)">
                 <div class="item-anime">
                     <img class="item-anime-image" src="./images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
                     <div class="item-anime-horizontal inner">
@@ -330,23 +324,19 @@
                         <br>
                         <br>
                         <div class="form-login">
-                            <input type="text" class="form-control" id="taikhoan" name="taikhoan"
-                                placeholder="Tài khoản" required />
+                            <input type="text" class="form-control" id="taikhoan" name="taikhoan" placeholder="Tài khoản" required />
                             <label class="form-control-label" for="taikhoan"><i class='fas fa-user-alt'></i></label>
                         </div>
                         <div class="form-login">
-                            <input type="password" class="form-control" id="matkhau1" name="matkhau1"
-                                placeholder="Mật khẩu" required />
+                            <input type="password" class="form-control" id="matkhau1" name="matkhau1" placeholder="Mật khẩu" required />
                             <label class="form-control-label" for="matkhau1"><i class="fa fa-lock"></i></label>
                         </div>
                         <div class="form-login">
-                            <input type="password" class="form-control" id="matkhau2" name="matkhau2"
-                                placeholder="Nhập lại mật khẩu" required />
+                            <input type="password" class="form-control" id="matkhau2" name="matkhau2" placeholder="Nhập lại mật khẩu" required />
                             <label class="form-control-label" for="matkhau2"><i class="fa fa-lock"></i></label>
                         </div>
                         <div class="form-login">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email"
-                                required />
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required />
                             <label class="form-control-label" for="email"><i class="fa fa-envelope"></i></label>
                         </div>
                         <button type="button" id="login-button-dangky" onclick="Signup()">ĐĂNG KÝ</button>
@@ -1444,72 +1434,10 @@
 </body>
 <script src="./js/scroll.js "></script>
 <script src="./js/nav.js"></script>
+<script src="./js/login.js"></script>
 <script>
     //Move banner
     $('.slide-banner').jdSlider();
-
-    function login() {
-        Swal.fire({
-            title: 'Đăng nhập',
-            html: '<input type="text " id="login " class="swal2-input " placeholder="Username ">' +
-                '<input type="password " id="password " class="swal2-input " placeholder="Password ">',
-            confirmButtonText: 'Đăng nhập',
-            focusConfirm: false,
-            preConfirm: () => {
-                const login = Swal.getPopup().querySelector('#login').value
-                const password = Swal.getPopup().querySelector('#password').value
-                if (!login || !password) {
-                    Swal.showValidationMessage(`Xin vui lòng nhập tên đăng nhập và mật khẩu`)
-                }
-                return {
-                    login: login,
-                    password: password
-                }
-            }
-        }).then((result) => {
-            Swal.fire(`Login: ${result.value.login} Password: ${result.value.password}`.trim())
-        })
-    }
-    function Signup() {
-        var user = document.getElementById("taikhoan").value;
-        var pass1 = document.getElementById("matkhau1").value;
-        var pass2 = document.getElementById("matkhau2").value;
-        var email = document.getElementById("email").value;
-        if (user && pass1 && pass2 && email) {
-            if (pass1 !== pass2) {
-                Swal.fire({
-                    text: "Vui lòng nhập mật khẩu trùng nhau!",
-                    icon: "warning",
-                    button: "OK!",
-                });
-            } else {
-                if (email.includes("@gmail.com") || email.includes("@outlook.com") || email.includes("@yahoo.com")) {
-                    Swal.fire({
-                        text: "Bạn đã đăng ký thành công!",
-                        icon: "success",
-                        button: "OK!",
-                    });
-                    window.location.replace("signedin.html")
-                } else {
-                    Swal.fire({
-                        text: "Vui lòng nhập email đúng định dạng!",
-                        icon: "warning",
-                        button: "OK!",
-                    });
-                }
-            }
-        } else {
-
-            Swal.fire({
-                text: "Vui lòng nhập đầy đủ thông tin!",
-                icon: "warning",
-                button: "OK!",
-            });
-        }
-    }
-    function sign_up(){
-        window.location.replace("signup.html");
-    }
 </script>
 
 </html>
