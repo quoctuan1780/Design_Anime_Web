@@ -212,7 +212,7 @@
     <div class="container">
         <!-- Top Anime -->
         <div class="scroll-horizontal">
-            <a class="item-anime-link" href="#" title="Ông chồng nội trợ (2020)">
+            <a class="item-anime-link" href="./detail.html" title="Ông chồng nội trợ (2020)">
                 <div class="item-anime">
                     <img class="item-anime-image" src="./images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
                     <div class="item-anime-horizontal inner">
@@ -378,11 +378,10 @@
             <div class="flex-container">
                 <div class="col-70" id="div70">
                     <!-- Detail movie -->
-                    <div >
-                        <video controls class="watchmovie" id="vid">
+                    <div>
+                        <video controls class="watchmovie">
                             <source src="./video/Sword Art Online - Official Trailer.mp4" type="video/mp4">
                         </video>
-
                     </div>
                     <div class="flex-container-watch-movie">
                         <div>
@@ -395,7 +394,7 @@
                             <button type="button" class="btn-watchmovie" id="download"><i class="fa fa-download" ></i> Tải về</button>
                         </div>
                         <div>
-                            <button type="button" class="btn-watchmovie" onclick="addBookmark()"id="add-bookmark"><i class="fa fa-bookmark" ></i> Theo dõi</button>
+                            <button type="button" class="btn-watchmovie" onclick="addBookmark()" id="add-bookmark"><i class="fa fa-bookmark" ></i> Theo dõi</button>
                         </div>
                         <div>
                             <button type="button" class="btn-watchmovie" id="warning"><i class="fa fa-warning" ></i> Báo lỗi</button>
@@ -409,7 +408,7 @@
                     </div>
                     <p class="text-watch-movie">Danh sách tập phim</p>
                     <div class="flex-container-tap-phim">
-                        
+
                         <div>
                             <button type="button" class="tap-phim-dang-xem" onclick="changeEp()"> Tập 01</button>
                         </div>
@@ -435,12 +434,12 @@
                             <button type="button" class="tap-phim" onclick="changeEp()"> Tập 08</button>
                         </div>
                         <div>
-                            <button type="button" class="tap-phim"onclick="changeEp()"> Tập 09</button>
+                            <button type="button" class="tap-phim" onclick="changeEp()"> Tập 09</button>
                         </div>
                         <div>
                             <button type="button" class="tap-phim" onclick="changeEp()"> Tập 10</button>
                         </div>
-                       
+
                     </div>
                     <div class="info-comment">
                         <div class="fb-comments" data-href="http://animevietsub.tv/phim/sword-art-online-2-i2-a2005/" data-numposts="5" data-width="100%"></div>
@@ -963,6 +962,7 @@
 <script src="./js/scroll.js "></script>
 <script src="./js/nav.js"></script>
 <script src="./js/search.js"></script>
+<script src="./js/login.js"></script>
 <script>
     function changeBookmark() {
         var text = document.getElementById('follow').textContent;
@@ -972,56 +972,28 @@
     }
     //Move banner
     $('.slide-banner').jdSlider();
-
-    function login() {
-        Swal.fire({
-            title: 'Đăng nhập',
-            html: '<input type="text " id="login " class="swal2-input " placeholder="Username ">' +
-                '<input type="password " id="password " class="swal2-input " placeholder="Password ">',
-            confirmButtonText: 'Đăng nhập',
-            focusConfirm: false,
-            preConfirm: () => {
-                const login = Swal.getPopup().querySelector('#login').value
-                const password = Swal.getPopup().querySelector('#password').value
-                if (!login || !password) {
-                    Swal.showValidationMessage(`Xin vui lòng nhập tên đăng nhập và mật khẩu`)
-                }
-                return {
-                    login: login,
-                    password: password
-                }
-            }
-        }).then((result) => {
-            Swal.fire(`Login: ${result.value.login} Password: ${result.value.password}`.trim())
-        })
-    }
     // previous ep
-    function changeEp()
-    {
+    function changeEp() {
         window.location.replace("./watchmovie.html");
     }
 
-    function addBookmark()
-    {
+    function addBookmark() {
         var color = document.getElementById("add-bookmark").style.backgroundColor;
-        if(color == 'green'){
+        if (color == 'green') {
             document.getElementById("add-bookmark").style.backgroundColor = "#0f1416";
             document.getElementById("add-bookmark").style.color = "darkgrey";
-        }
-        else{
+        } else {
             document.getElementById("add-bookmark").style.backgroundColor = 'green';
-            document.getElementById("add-bookmark").style.color="black";
+            document.getElementById("add-bookmark").style.color = "black";
         }
     }
 
-    function addFavorite()
-    {
+    function addFavorite() {
         var color = document.getElementById("love").style.backgroundColor;
-        if(color == 'lightcoral'){
+        if (color == 'lightcoral') {
             document.getElementById("love").style.backgroundColor = "#0f1416";
             document.getElementById("love").style.color = 'darkgrey';
-        }
-        else{
+        } else {
             document.getElementById("love").style.backgroundColor = 'lightcoral';
             document.getElementById("love").style.color = 'black';
         }
@@ -1046,7 +1018,6 @@
         }
 
     }
-
 </script>
 
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v9.0" nonce="7TLOcrIZ"></script>

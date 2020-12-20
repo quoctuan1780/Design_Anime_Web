@@ -20,7 +20,7 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <a href="#">
+            <a href="./index.html">
                 <img src="./images/logoz.png" alt="Logo">
             </a>
         </div>
@@ -160,13 +160,7 @@
                     <div id="btn-login">
                         <input type="button" class="btn btn-danger btn-size" onclick="login()" value="Đăng nhập">
                     </div>
-                    
-                </li>
-                <li class="child">
-                    <div>
-                        <input type="button" class="btn btn-danger btn-size" onclick="sign_up()" value="Đăng ký">
-                    </div>
-                    
+
                 </li>
             </ul>
         </nav>
@@ -219,7 +213,7 @@
     <div class="container">
         <!-- Top Anime -->
         <div class="scroll-horizontal">
-            <a class="item-anime-link" href="#" title="Ông chồng nội trợ (2020)">
+            <a class="item-anime-link" href="./detail.html" title="Ông chồng nội trợ (2020)">
                 <div class="item-anime">
                     <img class="item-anime-image" src="./images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
                     <div class="item-anime-horizontal inner">
@@ -1678,35 +1672,10 @@
 <script src="./js/scroll.js "></script>
 <script src="./js/nav.js"></script>
 <script src="./js/search.js"></script>
+<script src="./js/login.js"></script>
 <script>
     //Move banner
     $('.slide-banner').jdSlider();
-
-    function login() {
-        Swal.fire({
-            title: 'Đăng nhập',
-            html: '<input type="text " id="login " class="swal2-input " placeholder="Username ">' +
-                '<input type="password " id="password " class="swal2-input " placeholder="Password ">',
-            confirmButtonText: 'Đăng nhập',
-            focusConfirm: false,
-            preConfirm: () => {
-                const login = Swal.getPopup().querySelector('#login').value
-                const password = Swal.getPopup().querySelector('#password').value
-                if (!login || !password) {
-                    Swal.showValidationMessage(`Xin vui lòng nhập tên đăng nhập và mật khẩu`)
-                }
-                return {
-                    login: login,
-                    password: password
-                }
-            }
-        }).then((result) => {
-            Swal.fire(`Login: ${result.value.login} Password: ${result.value.password}`.trim())
-        })
-    }
-    function sign_up(){
-        window.location.replace("signup.html");
-    }
 </script>
 
 </html>
