@@ -376,10 +376,10 @@
         <!-- Body -->
         <div class="container-xl">
             <div class="flex-container">
-                <div class="col-70">
+                <div class="col-70" id="div70">
                     <!-- Detail movie -->
                     <div >
-                        <video controls class="watchmovie">
+                        <video controls class="watchmovie" id="vid">
                             <source src="./video/Sword Art Online - Official Trailer.mp4" type="video/mp4">
                         </video>
 
@@ -404,7 +404,7 @@
                             <button type="button" class="btn-watchmovie" id="love" onclick="addFavorite()"><i class="fa fa-heart" ></i> Thêm vào mục yêu thích</button>
                         </div>
                         <div>
-                            <button type="button" class="btn-watchmovie" id="close"><i class="fa fa-close" ></i> Tắt quảng cáo</button>
+                            <button type="button" class="btn-watchmovie" id="close" onclick=changeSizeScreen()><i class="fa fa-close" ></i> Tắt quảng cáo</button>
                         </div>
                     </div>
                     <p class="text-watch-movie">Danh sách tập phim</p>
@@ -612,6 +612,121 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="item-anime-absol" hidden id="hidden1">
+                                <a class="item-anime-link" href="#" title="Beelzebub - Vua Quỷ (2011)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-28013.jpg" alt="Beelzebub - Vua Quỷ (2011)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.6</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Beelzebub</h6>
+                                            <span>Lượt xem: 684,129</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Beelzebub</h6>
+                                        <p><i class="fas fa-star"> 9.6</i> <i class="far fa-clock"> 60/60</i> <i class="far fa-calendar-plus"> 2011</i> </p>
+                                        <p>Nội dung sơ sơ thì chắc ai cũng biết rồi, thì là câu chuyện xoay quanh Oga Tatsumi, người được coi là gã côn đồ</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Pierrot Plus </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span> <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="School">School</a>,
+                                            <a href="#" title="Supernatural">Supernatural</a>,
+                                            <a href="#" title="Demons">Demons</a>,
+                                            <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Action">Action</a>,
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Oga Tatsumi, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol" hidden id="hidden2">
+                                <a class="item-anime-link" href="#" title="Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai - SHIMONETABD : A Boring World Where the Concept of Dirty Jokes Doesn' Exist, Shimoseka (2015)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-CqE8sEmV63.jpg" alt="Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai - SHIMONETABD : A Boring World Where the Concept of Dirty Jokes Doesn' Exist, Shimoseka (2015)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.6</i></div>
+                                                    <div class="item-anime-content-ep"><span>Hoàn <br> <b>Tất</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai</h6>
+                                            <span>Lượt xem: 302,980</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>Shimoneta to Iu Gainen ga Sonzai Shinai Taikutsu na Sekai</h6>
+                                        <p><i class="fas fa-star"> 9.3</i> <i class="far fa-clock"> 12/12</i> <i class="far fa-calendar-plus"> 2015</i> </p>
+                                        <p>Bản BD( Bluray Disc ) của Shimoneta To Iu Gainen Ga Sonzai Shinai Taikutsu Na Sekai: Câu chuyện đặt trong bối cảnh 16 năm sau...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> J.C.Staff </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="School">School</a>,
+                                            <a href="#" title="Ecchi">Ecchi</a>,
+                                            <a href="#" title="Comedy">Comedy</a>, </p>
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Kajou Ayame, </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="item-anime-absol"hidden id="hidden3">
+                                <a class="item-anime-link" href="#" title="One Piece - Vua Hải Tặc - Đảo Hải Tặc (1999)">
+                                    <div class="item-anime-content">
+                                        <img src="./images/Anime_nomination/animevsub-sQCBqYz9ve.jpg" alt="One Piece - Vua Hải Tặc - Đảo Hải Tặc (1999)">
+                                        <div class="item-anime-content-absol">
+                                            <div class="item-anime-content-info">
+                                                <div class="px-2">
+                                                    <div class="item-anime-content-rank"><i class="fas fa-star"> 9.1</i></div>
+                                                    <div class="item-anime-content-ep"><span>Tập <br> <b>951</b></span></div>
+                                                </div>
+                                            </div>
+                                            <div class="item-anime-content-play"><i class="fas fa-play-circle"></i></div>
+                                        </div>
+
+                                        <div class="item-anime-content-mix-color"></div>
+                                        <div class="item-anime-content-name">
+                                            <h6>One Piece - Vua Hải Tặc</h6>
+                                            <span>Lượt xem: 16,844,993</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-content-sub-detail">
+                                    <div class="px-2">
+                                        <h6>One Piece - Vua Hải Tặc</h6>
+                                        <p><i class="fas fa-star"> 9.1</i> <i class="far fa-clock"> 951/???</i> <i class="far fa-calendar-plus"> 1999</i> </p>
+                                        <p>One Piece xoay quanh 1 nhóm cướp biển được gọi là Băng Hải tặc Mũ Rơm - Straw Hat Pirates - được thành lập và lãnh...</p>
+                                        <p><i class="fas fa-video"></i><span> Studio:</span> Toei Animation </p>
+                                        <p><i class="fas fa-film"></i><span> Thể Loại:</span>
+                                            <a href="#" title="Shounen">Shounen</a>,
+                                            <a href="#" title="Super Power">Super Power</a>,
+                                            <a href="#" title="Fantasy">Fantasy</a>,
+                                            <a href="#" title="Drama">Drama</a>, <a href="#" title="Comedy">Comedy</a>,
+                                            <a href="#" title="Adventure">Adventure</a>,
+                                            <a href="#" title="Action">Action</a>,</p>
+                                        </p>
+                                        <p><i class="fas fa-user"></i> <span> Diễn Viên</span> Monkey D. Luffy, </p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="show-more-anime ">
                             <a href="# ">Xem thêm</a>
@@ -621,7 +736,7 @@
                     <!-- End Content col 70 -->
                 </div>
                 <!-- Content col 30 -->
-                <div class="col-30 ">
+                <div class="col-30 " id="div30">
                     <section>
                         <div class="content">
                             <div class="px-2">
@@ -910,6 +1025,26 @@
             document.getElementById("love").style.backgroundColor = 'lightcoral';
             document.getElementById("love").style.color = 'black';
         }
+    }
+
+    function changeSizeScreen(){
+        var a = document.getElementById("div70");
+        var b = document.getElementById("div30");
+        if(a.style.width != "100%"){
+            a.style.width = "100%";
+            b.style.width = "100%";
+            document.getElementById("hidden1").hidden= false;
+            document.getElementById("hidden2").hidden= false;
+            document.getElementById("hidden3").hidden= false;
+        }else{
+            a.style.width = "70%";
+            b.style.width = "30%";
+            b.style.marginLeft=0;
+            document.getElementById("hidden1").hidden= true;
+            document.getElementById("hidden2").hidden= true;
+            document.getElementById("hidden3").hidden= true;
+        }
+
     }
 
 </script>
