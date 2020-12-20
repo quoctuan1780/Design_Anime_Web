@@ -117,7 +117,7 @@
                 <li><a href="#">Lịch chiếu</a></li>
                 <li class="child">
                     <div class="search-container" id="search">
-                        <form action="#">
+                        <form action="./search.html">
                             <div class="form-group">
                                 <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" name="search" id="search1" autocomplete="off">
                                 <button type="submit"><i class="fa fa-search"></i></button>
@@ -167,7 +167,7 @@
             <i class="fa fa-bars" aria-hidden="true"></i>
         </div>
         <div class="search-container-responsive" id="search">
-            <form action="#">
+            <form action="./search.html">
                 <div class="form-group">
                     <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" id="search2" name="search" autocomplete="off">
                     <button type="submit"><i class="fa fa-search"></i></button>
@@ -375,16 +375,255 @@
 
         <!-- Body -->
         <div class="container-xl">
+            <div class="fillter">
+                <button class="btn btn-default right" onclick="showFillter()"><i class="fas fa-sort"></i> Lọc Anime</button>
+            </div>
+            <h1 style="color: #FFF;">Lọc anime</h1>
+            <div class="result-fillter display-none" id="fillter">
+                <form action="#" id="form-ft">
+                    <div class="fillter-form">
+                        <div class="fillter-sort col-30">
+                            <label for="sort" class="label">Sắp xếp theo</label>
+                            <ul>
+                                <li><input type="radio" name="sort" value="new" checked> <i class="fas fa-clock"> <span>Mới nhất</span></i></li>
+                                <li><input type="radio" name="sort" value="atoz"> <i class="fas fa-sort-alpha-down-alt"> <span>Tên A-Z</span></i></i>
+                                </li>
+                                <li><input type="radio" name="sort" value="ztoa"> <i class="fas fa-sort-alpha-up-alt"> <span>Tên Z-A</span></i></li>
+                                <li><input type="radio" name="sort" value="watchmore"> <i class="fas fa-eye"> <span>Xem nhiều nhất</span></i></li>
+                                <li><input type="radio" name="sort" value="cmtmore"> <i class="fas fa-star"> <span>Bình chọn nhiều nhất</span></i></li>
+                            </ul>
+                        </div>
+                        <div class="col-70">
+                            <label for="kind" class="label">Loại</label>
+                            <div class="fillter-choose">
+                                <div class="fillter-radio">
+                                    <input type="radio" name="kind" value="allan" checked> <span>Tất cả</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="kind" value="anodd"> <span>Anime lẻ(Movie/OVA)</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="kind" value="ansearie"> <span>Anime bộ(TV-Series)</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="kind" value="ansearies"> <span>Anime trọn bộ</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="kind" value="anshow"> <span>Anime đang chiếu</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="kind" value="ancoming"> <span>Anime sắp chiếu</span>
+                                </div>
+                            </div>
+
+                            <label for="season" class="label">Mùa</label>
+                            <div class="fillter-choose">
+                                <div class="fillter-radio">
+                                    <input type="radio" name="season" value="allseasin" checked> <span>Tất cả</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="season" value="winterseason"> <span>Đông(Winter)</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="season" value="springseason"> <span>Xuân(Spring)</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="season" value="summerseason"> <span>Hạ(Summer)</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="season" value="autumnseason"> <span>Thu(Autumn)</span>
+                                </div>
+                            </div>
+
+                            <label for="category" class="label">Thể loại</label>
+                            <div class="fillter-choose">
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Action</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Adventure</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Cartoon</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Comedy</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Dementia</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Demons</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Drama</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Ecchi</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Fantasy</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Game</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Harem</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Historical</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Horror</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Josei</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Kids</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Live Action</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Magic</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Martial Arts</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Mecha</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Military</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Music</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Mystery</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Parody</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Police</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Psychological</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Romance</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Samurai</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>School</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Sci-Fi</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Seinen</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Shoujo</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Shoujo Ai</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Shounen</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Shounen Ai</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Slice of Life</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Space</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Sports</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Super Power</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Supernatural</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Thriller</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Tokusatsu</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Vampire</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Yaoi</span>
+                                </div>
+                                <div class="fillter-checkbox">
+                                    <input type="checkbox" name="category"> <span>Yuri</span>
+                                </div>
+                            </div>
+
+                            <label for="year" class="label">Năm</label>
+                            <div class="fillter-choose">
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="allyear" checked> <span>Tất cả</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2020"> <span>2020</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2019"> <span>2019</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2018"> <span>2018</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2017"> <span>2017</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2016"> <span>2016</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2015"> <span>2015</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2014"> <span>2014</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="2013"> <span>2013</span>
+                                </div>
+                                <div class="fillter-radio">
+                                    <input type="radio" name="year" value="thanold"> <span>Cũ hơn</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="fillter" value="Lọc anime" class="btn btn-danger">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="container-xl">
+            <div class="list-anime">
+                <div class="list-anime-header">
+                    <h3>Kết quả tìm kiếm <i class="fas fa-angle-right" style="display: inline-block;"></i> </h3>
+                </div>
+            </div>
             <div class="flex-container">
                 <div class="col-70">
                     <!-- Content -->
                     <section class="section-col-70">
                         <!-- Search anime -->
-                        <div class="list-anime">
-                            <div class="list-anime-header">
-                                <h3>Kết quả tìm kiếm <i class="fas fa-angle-right" style="display: inline-block;"></i> </h3>
-                            </div>
-                        </div>
+
                         <div class="flex-content">
                             <div class="item-anime-absol">
                                 <a class="item-anime-link" href="#" title="Beelzebub - Vua Quỷ (2011)">
@@ -1203,6 +1442,15 @@
 <script>
     //Move banner
     $('.slide-banner').jdSlider();
+
+    function showFillter() {
+        var item = document.getElementById('fillter');
+        if (item.className.search('display-none') !== -1) {
+            item.className = item.className.replace(' display-none', '');
+        } else {
+            item.className += ' display-none';
+        }
+    }
 </script>
 
 </html>
