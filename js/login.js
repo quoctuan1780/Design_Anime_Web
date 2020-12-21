@@ -70,3 +70,12 @@ function Signup() {
         });
     }
 }
+
+function logout() {
+    Swal.fire({
+        text: "Đăng xuất thành công!",
+        icon: "success",
+        button: "OK!",
+    });
+    window.location.replace("index.html")
+}

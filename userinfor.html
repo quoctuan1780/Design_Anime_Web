@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User info</title>
+    <script src="https://kit.fontawesome.com/4c9eabfb23.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery.jdSlider-latest.min.js"></script>
+    <script src="./js/timer.js "></script>
+    <script src="./js/active.js"></script>
+
+    <link rel="stylesheet" href="./css/style.css" type="text/css">
+    <link rel="stylesheet" href="./css/common.css" type="text/css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="./index.html">
+                <img src="http://cdn.animevietsub.tv/data/logo/logoz.png" alt="Logo">
+            </a>
+        </div>
+        <nav>
+            <div class="mix-color-nav"></div>
+            <ul>
+                <li><a href="./index.html">Trang chủ</a></li>
+
+                <li class="sub-menu"><a href="#">Dạng anime</a>
+                    <ul>
+                        <li><a href="#">TV/Series</a></li>
+                        <li><a href="#">Movie/OVA</a></li>
+                        <li><a href="#">Anime Sắp Chiếu</a></li>
+                        <li><a href="#">Anime Đang Chiếu</a></li>
+                        <li><a href="#">Anime Trọn Bộ</a></li>
+                        <li><a href="#">Anime Được Yêu Thích</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Top anime</a>
+                    <ul>
+                        <li><a href="#">Theo Ngày</a></li>
+                        <li><a href="#">Theo Tháng</a></li>
+                        <li><a href="#">Theo Mùa</a></li>
+                        <li><a href="#">Theo Năm</a></li>
+                    </ul>
+                </li>
+
+                <li class="sub-menu"><a href="#">Thể loại</a>
+                    <ul>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Adventure</a></li>
+                        <li><a href="#">Cartoon</a></li>
+                        <li><a href="#">Comedy</a></li>
+                        <li><a href="#">Dementia</a></li>
+                        <li><a href="#">Demons</a></li>
+                        <li><a href="#">Drama</a></li>
+                        <li><a href="#">Ecchi</a></li>
+                        <li><a href="#">Fantasy</a></li>
+                        <li><a href="#">Game</a></li>
+                        <li><a href="#">Harem</a></li>
+                        <li><a href="#">Historical</a></li>
+                        <li><a href="#">Horror</a></li>
+                        <li><a href="#">Josei</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Live Action</a></li>
+                        <li><a href="#">Magic</a></li>
+                        <li><a href="#">Martial Arts</a></li>
+                        <li><a href="#">Mecha</a></li>
+                        <li><a href="#">Military</a></li>
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Mystery</a></li>
+                        <li><a href="#">Parody</a></li>
+                        <li><a href="#">Police</a></li>
+                        <li><a href="#">Psychological</a></li>
+                        <li><a href="#">Romance</a></li>
+                        <li><a href="#">Samurai</a></li>
+                        <li><a href="#">School</a></li>
+                        <li><a href="#">Sci-Fi</a></li>
+                        <li><a href="#">Seinen</a></li>
+                        <li><a href="#">Shoujo</a></li>
+                        <li><a href="#">Shoujo Ai</a></li>
+                        <li><a href="#">Shounen</a></li>
+                        <li><a href="#">Shounen Ai</a></li>
+                        <li><a href="#">Slice of Life</a></li>
+                        <li><a href="#">Space</a></li>
+                        <li><a href="#">Sports</a></li>
+                        <li><a href="#">Super Power</a></li>
+                        <li><a href="#">Supernatural</a></li>
+                        <li><a href="#">Thriller</a></li>
+                        <li><a href="#">Tokusatsu</a></li>
+                        <li><a href="#">Vampire</a></li>
+                        <li><a href="#">Yaoi</a></li>
+                        <li><a href="">Yuri</a></li>
+                    </ul>
+                </li>
+                <li class="sub-menu"><a href="#">Season</a>
+                    <ul>
+                        <li><a href="#">Mùa Đông 2020</a></li>
+                        <li><a href="#">Mùa Xuân 2020</a></li>
+                        <li><a href="#">Mùa Hạ 2020</a></li>
+                        <li><a href="#">Mùa Thu 2020</a></li>
+                        <li><a href="#">Mùa Đông 2019</a></li>
+                        <li><a href="#">Mùa Xuân 2019</a></li>
+                        <li><a href="#">Mùa Hạ 2019</a></li>
+                        <li><a href="#">Mùa Thu 2019</a></li>
+                        <li><a href="#">Mùa Đông 2018</a></li>
+                        <li><a href="#">Mùa Xuân 2018</a></li>
+                        <li><a href="#">Mùa Hạ 2018</a></li>
+                        <li><a href="#">Mùa Thu 2018</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Thư viện</a></li>
+                <li><a href="#">Lịch chiếu</a></li>
+                <li class="child">
+                    <div class="search-container" id="search">
+                        <form action="./search.html">
+                            <div class="form-group">
+                                <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" name="search" id="search1" autocomplete="off">
+                                <button type="submit"><i class="fa fa-search"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="result-search display-none" id="result-search-1">
+                        <div class="flex-row">
+                            <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Tonikaku Kawaii</span>
+                                <span>Tập 11 Vietsub</span>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <img src="./images/animevsub-a23W5RkzqX.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Haikyuu!!: To the Top 2nd Season</span>
+                                <span>Full Vietsub</span>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <img src="./images/animevsub-ntec5urQH2.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Kamisama ni Natta Hi</span>
+                                <span>Tập 10 Vietsub</span>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <img src="./images/animevsub-UsmSNURxEV.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                            <div class="flex-column">
+                                <span onclick="window.location='#'" class="name">Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                                <span>Tập 11 Vietsub</span>
+                            </div>
+                        </div>
+                        <input type="button" value="Enter để tìm kiếm" class="btn btn-danger btn-search">
+                    </div>
+                </li>
+
+                <li class="sub-menu">
+                    <a href="#"><img src="./images/animevsub-1NmQPMC9x0.jpg" class="img-circle" alt="Avatar"></a>
+                    <ul class="sub-menu-user">
+                        <li><a href="./userinfor.html"><i class="fas fa-user"> Thông tin tài khoản</i></a></li>
+                        <li><a href="#"><i class="fas fa-film"> Tủ phim</i></a></li>
+                        <li><a href="./index.html"><i class="fas fa-sign-out-alt"> Đăng xuất</i></a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="menu-toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <div class="search-container-responsive" id="search">
+            <form action="./search.html">
+                <div class="form-group">
+                    <input type="text" placeholder="Tìm tên tiếng Việt, Anh hoặc Nhật" id="search2" name="search" autocomplete="off">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+            <div class="result-search display-none" id="result-search-2">
+                <div class="flex-row">
+                    <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Tonikaku Kawaii</span>
+                        <span>Tập 11 Vietsub</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <img src="./images/animevsub-a23W5RkzqX.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Haikyuu!!: To the Top 2nd Season</span>
+                        <span>Full Vietsub</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <img src="./images/animevsub-ntec5urQH2.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Kamisama ni Natta Hi</span>
+                        <span>Tập 10 Vietsub</span>
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <img src="./images/animevsub-UsmSNURxEV.jpg" alt="Tonikaku Kawaii" width="50px" height="80px">
+                    <div class="flex-column">
+                        <span onclick="window.location='#'" class="name">Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                        <span>Tập 11 Vietsub</span>
+                    </div>
+                </div>
+                <input type="button" value="Enter để tìm kiếm" class="btn btn-danger">
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Content -->
+    <div class="container">
+        <!-- Top Anime -->
+        <div class="scroll-horizontal">
+            <a class="item-anime-link" href="./detail.html" title="Ông chồng nội trợ (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-ntec5urQH2.jpg" alt="Ông chồng nội trợ (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.7</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>20</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Kamisama ni Natta Hi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Mahouka Koukou no Rettousei: Raihousha-hen (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-UsmSNURxEV.jpg" alt="Mahouka Koukou no Rettousei: Raihousha-hen (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Mahouka Koukou no Rettousei: Raihousha-hen</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Kamisama ni Natta Hi (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-YpSiFv1xXY.jpg" alt="Kamisama ni Natta Hi (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.8</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>07</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Kamisama ni Natta Hi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="One Piece - Vua Hải Tặc (1999)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-sQCBqYz9ve.jpg" alt="One Piece - Vua Hải Tặc (1999)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.1</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>951</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>One Piece - Vua Hải Tặc</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Haikyuu!!: To the Top 2nd Season (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-a23W5RkzqX.jpg" alt="Haikyuu!!: To the Top 2nd Season (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 10</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Haikyuu!!: To the Top 2nd Season</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Majo no Tabitabi (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-dM99i6mE1S.jpg" alt="Majo no Tabitabi (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.9</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Majo no Tabitabi</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Jujutsu Kaisen (TV) (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-XI9GXfbHY4.jpg" alt="Jujutsu Kaisen (TV) (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Jujutsu Kaisen</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Tonikaku Kawaii (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-1NmQPMC9x0.jpg" alt="Tonikaku Kawaii (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.5</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Tonikaku Kawaii</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <a class="item-anime-link" href="#" title="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III (2020)">
+                <div class="item-anime">
+                    <img class="item-anime-image" src="./images/animevsub-nOtd5pmG13.jpg" alt="Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III (2020)">
+                    <div class="item-anime-horizontal inner">
+                        <div class="center">
+                            <div class="px-2">
+                                <div class="item-anime-rank"><i class="fas fa-star"> 9.6</i></div>
+                                <div class="item-anime-ep"><span>Tập <i>08</i></span></div>
+                            </div>
+                        </div>
+                        <div class="item-anime-play"><i class="fas fa-play-circle"></i></div>
+                        <div class="item-anime-title">
+                            <span>Dungeon ni Deai wo Motomeru no wa Machigatteiru Darou ka III</span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- End Top Anime-->
+        </div>
+        <!-- End Top Anime -->
+        <div class="content-infor">
+            <h1 class="login-title"> THÔNG TIN TÀI KHOẢN</h1>
+            <div class="row">
+                <div class="col-30">
+                    <div class="container-infor">
+                        <img src="./images/animevsub-1NmQPMC9x0.jpg" alt="" class="cropped">
+                        <div class="overlay">
+                            <a href="#" class="icon" title="Thay đổi Avatar">
+                                <i class="fas fa-camera"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-70">
+                    <form action="#">
+                        <table>
+                            <tr>
+                                <th colspan="2"><span class="name">Nguyễn Ngọc Bảo Trâm</span></th>
+                            </tr>
+                            <tr>
+                                <td class="thuoctinh">
+                                    <span>Tên đăng nhập:</span>
+                                </td>
+                                <td>
+                                    <input type="text" name="name" value="baotram97" class="input-infor">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="thuoctinh">
+                                    <span>Giới tính:</span>
+                                </td>
+                                <td>
+                                    <input type="radio" value="Nữ" id="nu" name="gender" class="radio" checked>
+                                    <label for="nu">Nữ</label>
+                                    <input type="radio" value="Nam" id="nam" name="gender">
+                                    <label for="nam">Nam</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="thuoctinh">
+                                    <span>Ngày sinh:</span>
+                                </td>
+                                <td>
+                                    <input type="datetime" name="birth" value="20/12/1997" class="input-infor">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="thuoctinh">
+                                    <span>Email:</span>
+                                </td>
+                                <td>
+                                    <input type="email" name="email" value="baotram97@gmail.com" class="input-infor">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="thuoctinh">
+                                    <span>Mật khẩu:</span>
+
+                                </td>
+                                <td>
+                                    <input type="password" class="input-infor" name="pass" id="pass" placeholder="Để trống nếu bạn không thay đổi">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="thuoctinh" style="vertical-align: top;">
+                                    <span>Châm ngôn sống:</span>
+
+                                </td>
+                                <td>
+                                    <textarea type="text" name="textarea" class="input-infor" id="bio" rows="4" cols="12">Nếu một ngày cuộc sống của bạn bị nhuốm màu đen, hãy cầm bút và tô điểm cho nó những vì sao lấp lánh. </textarea>
+                                </td>
+                            </tr>
+                        </table>
+                        <div class="submit">
+                            <input type="submit" class="btn btn-danger btn-save" value="Lưu" />
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End content -->
+    <!-- Footer -->
+    <footer class="container" style="margin-top: 2rem;">
+        <div class="footer-heder">
+            <ul>
+                <li class="child">
+                    <a href="#"><img src="./images/logoz.png" alt="logo"></a>
+                </li>
+                <li class="child">
+                    <ul>
+                        <li><a href="#">Xem phim</a></li>
+                        <li><a href="#">Yêu cầu anime</a></li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </li>
+                <li class="child">
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-content">
+            <p>Developer: <span>Q.Tuấn</span><span>T.Thanh</span></p>
+            <a href="#">&copy; Copyright 2020 Anime</a>
+        </div>
+    </footer>
+    <!-- End Footer -->
+</body>
+<script src="./js/scroll.js "></script>
+<script src="./js/nav.js"></script>
+<script src="./js/login.js"></script>
+<script src="./js/search.js"></script>
+<script>
+    //Move banner
+    $('.slide-banner').jdSlider();
+</script>
+
+</html>
