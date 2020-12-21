@@ -37,6 +37,149 @@ button:hover {
 /* End Handle */
 
 
+/* user information */
+
+.login-title {
+    padding-top: 1rem;
+    text-align: center;
+    color: #000;
+}
+
+.userinfor {
+    text-align: center;
+    background-color: rgb(139, 132, 155);
+}
+
+::placeholder {
+    color: #000;
+}
+
+.input-infor:focus {
+    outline: none;
+}
+
+.input-infor {
+    width: 60%;
+    color: #000;
+    font-weight: 400;
+    font-size: 13pt;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 5px;
+}
+
+.col-70 table {
+    width: 100%;
+    border-spacing: none;
+}
+
+.col-70 table tr td textarea {
+    line-height: 25px;
+    width: 60%;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+}
+
+.thuoctinh {
+    padding: .5rem 0rem;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.col-70 table tr td span {
+    font-size: 18px;
+    color: #000;
+    font-weight: bold;
+}
+
+.radio {
+    margin-left: 5%;
+}
+
+.submit {
+    text-align: center;
+    padding: 5px;
+}
+
+.btn-save {
+    width: 15%;
+    height: 35px;
+    border-radius: 10%;
+}
+
+.name {
+    color: rgba(183, 28, 28, .9);
+    font-size: 16pt;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.content-infor {
+    background-color: rgba(255, 255, 255, 0.781);
+    width: 100%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.cropped {
+    max-width: 250px;
+    max-height: 250px;
+    min-width: 250px;
+    min-height: 250px;
+    width: 70%;
+    height: 70%;
+    overflow: hidden;
+    border: 0px solid black;
+    border-radius: 50%;
+    display: block;
+}
+
+.container-infor {
+    position: relative;
+    width: 100%;
+}
+
+.container-infor img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.overlay {
+    position: absolute;
+    left: 38%;
+    top: 30%;
+    opacity: 0;
+    transition: .3s ease;
+}
+
+.container-infor:hover .overlay {
+    opacity: 0.75;
+}
+
+.icon {
+    color: rgb(119, 110, 110);
+    font-size: 80px;
+    transform: translate(-50%, 110%);
+    -ms-transform: translate(0%, 0%);
+}
+
+.fa-user:hover {
+    color: #eee;
+}
+
+
+/* End user information */
+
+
 /* Fillter */
 
 .btn-default {
@@ -489,84 +632,6 @@ button:hover {
 
 
 /* End detail movie */
-
-
-/*Sign up*/
-
-
-/* .form-group {
-    position: relative;
-    min-height: 3.5em;
-    width: 60%;
-    margin: auto;
-  }
-  
-.login-title{
-    color: darkgrey;
-    font-family: cursive;
-    font-weight: bold;
-}
-
-.form{
-    background-color: #263238;
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-
-  input.form-control {
-    height: 2em;
-    position: absolute;
-    top: 0;
-    left: 0;
-    border: 0;
-    outline: 0;
-    background: left;
-    text-indent: 1cm;
-    border-bottom: 1px solid black;
-  }
-  
-  label.form-control-label {
-    position: absolute;
-    font-size: 1em;
-    top: 0;
-    color: darkgrey;
-    left: 5px;
-  }
-#fb-button{
-    background-color: #3b5998;
-    border-radius: 25px;
-    border: 2px solid #3b5998;
-    width: 60%;
-    height: 30px;
-    font-weight: bold;
-    color: whitesmoke;
-}
-
-#login-button-dangky{
-width: 150px;
-height: 35px;
-background-color: yellow;
-color: black;
-font-weight: bold;
-border-radius: 5px;
-border: 2px solid yellow;
-}
-
-.login-quenmk{
-    color: darkblue;
-    text-align: right;
-}
-
-.login-text{
-    text-align: left;
-    width: 60%;
-    color: rgb(139, 138, 138);
-    margin: auto;
-    
-} */
-
-
-/*end sign up*/
 
 body {
     background-color: #263238;
@@ -2035,6 +2100,9 @@ section {
 @media (max-width: 1300px) {
     .nav-text-color {
         font-size: 12px;
+    }
+    .overlay {
+        left: 45%;
     }
 }
 
