@@ -109,7 +109,7 @@ button:hover {
     border-radius: 10%;
 }
 
-.name {
+.name-user {
     color: rgba(183, 28, 28, .9);
     font-size: 16pt;
     font-weight: bold;
