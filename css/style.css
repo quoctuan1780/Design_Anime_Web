@@ -770,6 +770,15 @@ body {
 
 /* Search + btn */
 
+.banner-link {
+    text-decoration: none;
+    color: #FFF;
+}
+
+.banner-link span {
+    font-size: 18px;
+}
+
 .img-circle {
     padding: 5px;
     border-radius: 50%;
