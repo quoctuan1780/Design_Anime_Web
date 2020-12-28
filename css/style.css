@@ -37,6 +37,85 @@ button:hover {
 /* End Handle */
 
 
+/*Sign up*/
+
+.form-login {
+    position: relative;
+    min-height: 3.5em;
+    width: 60%;
+    margin: auto;
+}
+
+.login-title {
+    color: darkgrey;
+    font-family: cursive;
+    font-weight: bold;
+}
+
+#formsignup {
+    padding: 5%;
+    margin-right: 2%;
+    background-color: #263238;
+}
+
+input.form-control {
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+    outline: 0;
+    background: left;
+    text-indent: 1cm;
+    width: 100%;
+    color: darkgrey;
+    border-bottom: 1px solid black;
+}
+
+label.form-control-label {
+    position: absolute;
+    font-size: 1em;
+    top: 0;
+    color: darkgrey;
+    left: 5px;
+}
+
+#fb-button {
+    background-color: #3b5998;
+    border-radius: 25px;
+    border: 2px solid #3b5998;
+    width: 60%;
+    height: 30px;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+#login-button-dangky {
+    width: 150px;
+    height: 35px;
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    border: 2px solid yellow;
+}
+
+.login-quenmk {
+    color: darkblue;
+    text-align: right;
+}
+
+.login-text {
+    text-align: left;
+    width: 80%;
+    color: rgb(139, 138, 138);
+    margin: auto;
+}
+
+
+/*end sign up*/
+
+
 /* user information */
 
 .login-title {
